@@ -1,0 +1,320 @@
+::-moz-selection {
+  background: #333333;
+  color: white;
+}
+
+::selection {
+  background: #333333;
+  color: white;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+body h1,
+body h2 {
+  color: #3b4259;
+}
+
+body h1 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+  font-family: "Domine", serif;
+}
+
+body h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Work Sans", sans-serif;
+}
+
+body h3 {
+  display: block;
+  color: rgba(59, 66, 89, 0.75);
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: "Domine", serif;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  margin-bottom: 5vmin;
+  padding-top: 3.75vh;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+body p,
+body ul {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+body a {
+  color: #3b4259;
+  text-decoration: none;
+}
+
+body a p {
+  color: #3b4259;
+  margin: 1.25vmin 2.5vmin;
+}
+
+body a:hover,
+body a:focus {
+  color: #596487;
+  text-decoration: none;
+}
+
+body a:hover .fa,
+body a:focus .fa {
+  color: #596487;
+}
+
+body a:hover h2,
+body a:focus h2 {
+  color: #596487;
+}
+
+body a:hover p,
+body a:focus p {
+  color: #596487;
+}
+
+body .activeLink {
+  color: #596487;
+}
+
+body .activeLink i {
+  color: #596487;
+}
+
+body .fa {
+  color: #3b4259;
+}
+
+body figure {
+  max-width: 45%;
+  border-radius: 2.5em;
+  margin: 4.25vh 0;
+  margin-left: 2.5vmin;
+}
+
+body figure img {
+  color: #939ebf;
+  outline: 0.25vmin solid rgba(147, 158, 191, 0.625);
+  outline-offset: 2.5vmin;
+}
+
+body figure figcaption {
+  font-size: 0.9em;
+  color: #939ebf;
+}
+
+@media (max-width: 1023px) {
+  body figure {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  body figure {
+    max-width: 100%;
+  }
+}
+
+body blockquote {
+  background: #f2f2f2;
+  border-left: 2px solid #939ebf;
+  padding: 1.5vmax;
+  padding-left: 2em;
+  max-width: 65%;
+}
+
+body blockquote p {
+  font-family: "Domine", serif;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+@media (max-width: 1023px) {
+  body blockquote {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  body blockquote {
+    max-width: 100%;
+  }
+}
+
+body footer {
+  color: #333333;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: white;
+}
+
+body.dark h1 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+  font-family: "Domine", serif;
+}
+
+body.dark h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Work Sans", sans-serif;
+}
+
+body.dark h3 {
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: "Domine", serif;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  margin-bottom: 5vmin;
+  padding-top: 3.75vh;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+body.dark p,
+body.dark ul {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+body.dark a {
+  color: white;
+  text-decoration: none;
+}
+
+body.dark a p {
+  color: white;
+  margin: 1.25vmin 2.5vmin;
+}
+
+body.dark a:hover,
+body.dark a:focus {
+  color: #596487;
+  text-decoration: none;
+}
+
+body.dark a:hover .fa,
+body.dark a:focus .fa {
+  color: #596487;
+}
+
+body.dark a:hover h2,
+body.dark a:focus h2 {
+  color: #596487;
+}
+
+body.dark a:hover p,
+body.dark a:focus p {
+  color: #596487;
+}
+
+body.dark .activeLink {
+  color: #596487;
+}
+
+body.dark .activeLink i {
+  color: #596487;
+}
+
+body.dark .fa {
+  color: white;
+}
+
+body.dark figure {
+  max-width: 45%;
+  border-radius: 2.5em;
+  margin: 4.25vh 0;
+  margin-left: 2.5vmin;
+}
+
+body.dark figure img {
+  color: #939ebf;
+  outline: 0.25vmin solid rgba(147, 158, 191, 0.625);
+  outline-offset: 2.5vmin;
+}
+
+body.dark figure figcaption {
+  font-size: 0.9em;
+  color: #939ebf;
+}
+
+@media (max-width: 1023px) {
+  body.dark figure {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  body.dark figure {
+    max-width: 100%;
+  }
+}
+
+body.dark blockquote {
+  background: #f2f2f2;
+  border-left: 2px solid #939ebf;
+  padding: 1.5vmax;
+  padding-left: 2em;
+  max-width: 65%;
+}
+
+body.dark blockquote p {
+  font-family: "Domine", serif;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+@media (max-width: 1023px) {
+  body.dark blockquote {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  body.dark blockquote {
+    max-width: 100%;
+  }
+}
+
+body.dark footer {
+  color: #333333;
+}
+/*# sourceMappingURL=styles.css.map */

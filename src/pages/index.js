@@ -1,35 +1,18 @@
 import React from "react"
-import { graphql } from "gatsby"
-import PostLink from "../components/post-link"
+import Helmet from "react-helmet"
+import Layout from "../components/layout"
+import blogPage from "../components/blogPage"
 
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-
-  return <div>{Posts}</div>
-}
+const IndexPage = () => (
+  <Layout>
+    <Helmet>
+      <meta name="title" content="WIS Journal" />
+      <meta
+        name="description"
+        content="Welcome to the student run newspaper covering events in Western International School."
+      />
+    </Helmet>
+  </Layout>
+)
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-          }
-        }
-      }
-    }
-  }
-`

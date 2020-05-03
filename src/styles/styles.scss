@@ -1,0 +1,280 @@
+//VARIABLES
+//fonts
+$font-heading: "Domine", serif;
+$font-subheading: "Work Sans", sans-serif;
+$font-primary: "Roboto", sans-serif;
+//colors
+$clr-primary: #3b4259;
+$clr-primary-brightened: lighten($clr-primary, 15%);
+$clr-primary-darkmode: lighten($clr-primary, 75%);
+$clr-secondary: #d5dff2;
+$clr-light: lighten($clr-secondary, 15%);
+$clr-darker: #939ebf;
+$clr-dark: #333333;
+//breakpoints
+$desktop-bp: 1024px;
+$tablet-bp: 1023px;
+$mobile-bp: 480px;
+
+::selection {
+  background: $clr-dark;
+  color: $clr-light;
+}
+//global
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; //debug
+  background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
+  background-size: cover;
+  background-position: center;
+  h1,
+  h2 {
+    color: $clr-primary;
+  }
+  h1 {
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    font-family: $font-heading;
+  }
+  h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: $font-subheading;
+  }
+  h3 {
+    // the category heading for blog.js
+    display: block;
+    color: transparentize($clr-primary, 0.25);
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: $font-heading;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    margin-bottom: 5vmin; // cancel out the outline from blogContainer
+    padding-top: 3.75vh;
+    max-width: fit-content;
+  }
+  p,
+  ul {
+    color: $clr-dark;
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  a {
+    color: $clr-primary;
+    text-decoration: none;
+    p {
+      color: $clr-primary;
+      margin: 1.25vmin 2.5vmin;
+    }
+  }
+  a:hover,
+  a:focus {
+    color: $clr-primary-brightened;
+    text-decoration: none;
+    .fa {
+      //fa when container link is hovered
+      color: $clr-primary-brightened;
+    }
+    h2 {
+      color: $clr-primary-brightened;
+    }
+    p {
+      color: $clr-primary-brightened;
+    }
+  }
+  .activeLink {
+    color: $clr-primary-brightened;
+    i {
+      color: $clr-primary-brightened;
+    }
+  }
+  .fa {
+    color: $clr-primary;
+  }
+
+  // images
+  figure {
+    max-width: 45%;
+    border-radius: 2.5em;
+    margin: 4.25vh 0;
+    margin-left: 2.5vmin;
+    img {
+      //border-radius: 2.5vmin;
+      color: $clr-darker;
+      outline: 0.25vmin solid transparentize($clr-darker, 0.375);
+      outline-offset: 2.5vmin;
+    }
+    figcaption {
+      font-size: 0.9em;
+      color: $clr-darker;
+      //margin-top: -1em;
+    }
+  }
+  @media (max-width: $tablet-bp) {
+    figure {
+      max-width: 65%;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    figure {
+      max-width: 100%;
+    }
+  }
+  blockquote {
+    background: darken($clr-light, 5%);
+    border-left: 2px solid $clr-darker;
+    padding: 1.5vmax;
+    padding-left: 2em;
+    max-width: 65%;
+    p {
+      font-family: $font-heading;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+  @media (max-width: $tablet-bp) {
+    blockquote {
+      max-width: 80%;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    blockquote {
+      max-width: 100%;
+    }
+  }
+  footer {
+    color: $clr-dark;
+  }
+}
+
+body.dark {
+  h1,
+  h2 {
+    color: $clr-primary-darkmode;
+  }
+  h1 {
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    font-family: $font-heading;
+  }
+  h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: $font-subheading;
+  }
+  h3 {
+    // the category heading for blog.js
+    display: block;
+    color: transparentize($clr-primary-darkmode, 0.25);
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: $font-heading;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    margin-bottom: 5vmin; // cancel out the outline from blogContainer
+    padding-top: 3.75vh;
+    max-width: fit-content;
+  }
+  p,
+  ul {
+    color: $clr-light;
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  a {
+    color: $clr-primary-darkmode;
+    text-decoration: none;
+    p {
+      color: $clr-primary-darkmode;
+      margin: 1.25vmin 2.5vmin;
+    }
+  }
+  a:hover,
+  a:focus {
+    color: $clr-primary-brightened;
+    text-decoration: none;
+    .fa {
+      //fa when container link is hovered
+      color: $clr-primary-brightened;
+    }
+    h2 {
+      color: $clr-primary-brightened;
+    }
+    p {
+      color: $clr-primary-brightened;
+    }
+  }
+  .activeLink {
+    color: $clr-primary-brightened;
+    i {
+      color: $clr-primary-brightened;
+    }
+  }
+  .fa {
+    color: $clr-primary-darkmode;
+  }
+
+  // images
+  figure {
+    max-width: 45%;
+    border-radius: 2.5em;
+    margin: 4.25vh 0;
+    margin-left: 2.5vmin;
+    img {
+      //border-radius: 2.5vmin;
+      color: $clr-darker;
+      outline: 0.25vmin solid transparentize($clr-darker, 0.375);
+      outline-offset: 2.5vmin;
+    }
+    figcaption {
+      font-size: 0.9em;
+      color: $clr-darker;
+      //margin-top: -1em;
+    }
+  }
+  @media (max-width: $tablet-bp) {
+    figure {
+      max-width: 65%;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    figure {
+      max-width: 100%;
+    }
+  }
+  blockquote {
+    background: darken($clr-light, 5%);
+    border-left: 2px solid $clr-darker;
+    padding: 1.5vmax;
+    padding-left: 2em;
+    max-width: 65%;
+    p {
+      font-family: $font-heading;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+  @media (max-width: $tablet-bp) {
+    blockquote {
+      max-width: 80%;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    blockquote {
+      max-width: 100%;
+    }
+  }
+  footer {
+    color: $clr-dark;
+  }
+}

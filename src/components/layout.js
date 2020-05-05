@@ -1,28 +1,19 @@
 import React from "react"
-
-//components import
-import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import PropTypes from "prop-types"
+import { withPrefix, Link } from "gatsby"
 
 //styles import
 import layoutStyles from "../styles/styles.css"
 import resetStyles from "../styles/reset.css"
 
-const Layout = () => (
-  <div>
-    {" "}
-    <ThemeToggler>
-      {({ theme, toggleTheme }) => (
-        <label>
-          <input
-            type="checkbox"
-            onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-            checked={theme === "dark"}
-          />{" "}
-          <p>Dark</p>
-        </label>
-      )}
-    </ThemeToggler>
-  </div>
-)
+//components import
+import Header from "./header"
 
+const Layout = () => {
+  return (
+    <>
+      <Header></Header>
+    </>
+  )
+}
 export default Layout

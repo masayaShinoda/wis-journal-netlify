@@ -16,9 +16,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -316,5 +313,38 @@ body.dark blockquote p {
 
 body.dark footer {
   color: #333333;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80vmax;
+}
+
+header a img {
+  max-width: 5vmax;
+}
+
+@media (max-width: 480px) {
+  header {
+    max-width: 100vw;
+  }
+}
+
+.pageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid red;
+  width: 20px;
+  height: 200px;
 }
 /*# sourceMappingURL=styles.css.map */

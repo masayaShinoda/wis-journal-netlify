@@ -24,7 +24,6 @@ $mobile-bp: 480px;
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh; //debug
   background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
@@ -277,4 +276,32 @@ body.dark {
   footer {
     color: $clr-dark;
   }
+}
+
+//header component start
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80vmax;
+
+  a {
+    img {
+      max-width: 5vmax;
+    }
+  }
+}
+@media (max-width: $mobile-bp) {
+  header {
+    max-width: 100vw;
+  }
+}
+
+//header component end
+//index.js
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 20px;
+  height: 200px;
 }

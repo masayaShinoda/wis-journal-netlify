@@ -7,8 +7,12 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 //styles import
 import headerStyles from "../styles/styles.css"
-// import favicons
+//import favicons
 import "../assets/css/font-awesome.min.css"
+
+//images import
+import headerLogoLight from "../images/dark-font-header-logo.svg"
+import headerLogoDark from "../images/light-font-header-logo.svg"
 
 const Header = () => (
   <header>
@@ -37,7 +41,8 @@ const Header = () => (
       )}
     </ThemeToggler>
     <Link to="/">
-      <img src="https://masayashinoda.github.io/wis-news/images/logos/logos-v2-03.png"></img>
+      <img className="headerLogoLight" src={headerLogoLight}></img>
+      <img className="headerLogoDark" src={headerLogoDark}></img>
     </Link>
   </header>
 )

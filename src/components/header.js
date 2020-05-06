@@ -17,11 +17,11 @@ import headerLogoDark from "../images/light-font-header-logo.svg"
 const Header = () => (
   <header>
     <div>
-      <Link to="/">
-        <img className="headerLogoLight" src={headerLogoLight}></img>
-        <img className="headerLogoDark" src={headerLogoDark}></img>
-      </Link>
-      <nav>
+      <section>
+        <Link to="/">
+          <img className="headerLogoLight" src={headerLogoLight}></img>
+          <img className="headerLogoDark" src={headerLogoDark}></img>
+        </Link>
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <label
@@ -40,15 +40,18 @@ const Header = () => (
               />
               <i
                 className="fa fa-moon-o"
-                title="Enable/Disable Dark Mode"
+                title="Lights on/off"
                 style={{ fontSize: `1.5em` }}
               ></i>
             </label>
           )}
         </ThemeToggler>
+      </section>
+
+      <nav>
         <Link to="/">
           {" "}
-          <i className="fa fa-home"></i>Home
+          <i className="fa fa-home" activeClassName="activLink"></i>Home
         </Link>
         <Link to="/">
           <i className="fa fa-newspaper-o"></i>News

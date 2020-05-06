@@ -347,7 +347,15 @@ header div {
           align-items: center;
   margin: 0 auto;
   width: 65%;
-  border: 1px solid blue;
+}
+
+header div section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header div .headerLogoLight,
@@ -359,14 +367,6 @@ header div .headerLogoDark {
   padding: 0;
 }
 
-@media (max-width: 1023px) {
-  header div .headerLogoLight,
-  header div .headerLogoDark {
-    width: 20vmax;
-    height: 10vmax;
-  }
-}
-
 @media (max-width: 480px) {
   header div .headerLogoLight,
   header div .headerLogoDark {
@@ -375,13 +375,19 @@ header div .headerLogoDark {
   }
 }
 
+header div nav {
+  margin-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  border-bottom: 2px solid #596487;
+}
+
 header div nav a:first-of-type {
-  margin-left: 1.1em;
+  margin-left: 0;
 }
 
 header div nav a {
   font-size: 1.1em;
-  margin-right: 1.1em;
+  margin-left: 2.5vmax;
   -webkit-animation-name: nav-link;
           animation-name: nav-link;
   -webkit-animation-fill-mode: forwards;
@@ -392,13 +398,13 @@ header div nav a {
 
 @-webkit-keyframes nav-link {
   0% {
-    margin-left: 2.5vmax;
+    margin: 0 2.5vmax;
   }
 }
 
 @keyframes nav-link {
   0% {
-    margin-left: 2.5vmax;
+    margin: 0 2.5vmax;
   }
 }
 

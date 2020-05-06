@@ -314,7 +314,12 @@ header {
     align-items: center;
     margin: 0 auto;
     width: 65%;
-    border: 1px solid blue; //debug
+    section {
+      display: flex;
+      align-items: center;
+      //border: 1px solid green; //debug
+    }
+    //border: 1px solid blue; //debug
     .headerLogoLight,
     .headerLogoDark {
       display: inline-block;
@@ -322,13 +327,7 @@ header {
       height: 7.5vmax;
       margin: 0;
       padding: 0;
-    }
-    @media (max-width: $tablet-bp) {
-      .headerLogoLight,
-      .headerLogoDark {
-        width: 20vmax;
-        height: 10vmax;
-      }
+      //border: 1px solid red; //debug
     }
     @media (max-width: $mobile-bp) {
       .headerLogoLight,
@@ -338,20 +337,23 @@ header {
       }
     }
     nav {
+      margin-top: 1.5vh;
+      padding-bottom: 1.5vh;
+      border-bottom: 2px solid $clr-primary-brightened;
       //border: 1px solid blue; //debug
       a:first-of-type {
-        margin-left: 1.1em;
+        margin-left: 0;
       }
       a {
         font-size: 1.1em;
         //border: 1px solid red; //debug
-        margin-right: 1.1em;
+        margin-left: 2.5vmax;
         animation-name: nav-link;
         animation-fill-mode: forwards;
         animation-duration: 1.1s;
         @keyframes nav-link {
           0% {
-            margin-left: 2.5vmax;
+            margin: 0 2.5vmax;
           }
         }
         i {

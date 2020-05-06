@@ -17,34 +17,46 @@ import headerLogoDark from "../images/light-font-header-logo.svg"
 const Header = () => (
   <header>
     <div>
-      <ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <label
-            style={{
-              cursor: `pointer`,
-              padding: `0`,
-              margin: `0`,
-              lineHeight: `0`,
-            }}
-          >
-            <input
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-              checked={theme === "dark"}
-              style={{ visibility: `hidden` }}
-            />
-            <i
-              className="fa fa-moon-o"
-              title="Enable/Disable Dark Mode"
-              style={{ fontSize: `1.5em` }}
-            ></i>
-          </label>
-        )}
-      </ThemeToggler>
       <Link to="/">
         <img className="headerLogoLight" src={headerLogoLight}></img>
         <img className="headerLogoDark" src={headerLogoDark}></img>
       </Link>
+      <nav>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <label
+              style={{
+                cursor: `pointer`,
+                padding: `0`,
+                margin: `0`,
+                lineHeight: `0`,
+              }}
+            >
+              <input
+                type="checkbox"
+                onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+                checked={theme === "dark"}
+                style={{ visibility: `hidden` }}
+              />
+              <i
+                className="fa fa-moon-o"
+                title="Enable/Disable Dark Mode"
+                style={{ fontSize: `1.5em` }}
+              ></i>
+            </label>
+          )}
+        </ThemeToggler>
+        <Link to="/">
+          {" "}
+          <i className="fa fa-home"></i>Home
+        </Link>
+        <Link to="/">
+          <i className="fa fa-newspaper-o"></i>News
+        </Link>
+        <Link to="/">
+          <i className="fa fa-address-book-o "></i>About
+        </Link>
+      </nav>
     </div>
   </header>
 )

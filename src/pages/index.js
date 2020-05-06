@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
-import blogPage from "../components/blogPage"
+import BlogPage from "../components/blogPage"
 
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.css"
@@ -19,7 +19,7 @@ const IndexPage = () => {
           content="Welcome to the student run newspaper covering events in Western International School."
         />
       </Helmet>
-      <blogPage></blogPage>
+      <BlogPage></BlogPage>
     </Layout>
   )
 }

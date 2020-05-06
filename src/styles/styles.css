@@ -23,6 +23,7 @@ body {
   background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 body h1,
@@ -174,6 +175,10 @@ body.light .headerLogoDark {
   display: none;
 }
 
+body.light header {
+  background: white;
+}
+
 body.dark h1,
 body.dark h2 {
   color: white;
@@ -323,26 +328,40 @@ body.dark .headerLogoLight {
   display: none;
 }
 
+body.dark header {
+  background: #333333;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65vmax;
-  padding: 3.75vh 2.5vw;
   border: 1px solid red;
 }
 
-header .headerLogoLight,
-header .headerLogoDark {
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  border: 1px solid blue;
+}
+
+header div .headerLogoLight,
+header div .headerLogoDark {
   display: inline-block;
-  width: 10vmax;
-  height: 5vmax;
+  width: 15vmax;
+  height: 7.5vmax;
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
 }
 
 @media (max-width: 1023px) {

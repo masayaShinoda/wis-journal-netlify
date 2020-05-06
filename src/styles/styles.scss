@@ -29,6 +29,7 @@ body {
   background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   h1,
   h2 {
     color: $clr-primary;
@@ -156,6 +157,10 @@ body.light {
   .headerLogoDark {
     //hide light logo when lightmode
     display: none;
+  }
+  header {
+    //darkmode header
+    background: $clr-light;
   }
 }
 body.dark {
@@ -285,21 +290,34 @@ body.dark {
     //hide light logo when darkmode
     display: none;
   }
+  header {
+    //darkmode header
+    background: $clr-dark;
+  }
 }
 
 //header component start
 header {
   display: flex;
-  justify-content: space-between;
+  width: 100vw;
+  justify-content: center;
   align-items: center;
-  width: 65vmax;
-  padding: 3.75vh 2.5vw;
+  //width: 65vmax;
   border: 1px solid red; //debug
-  .headerLogoLight,
-  .headerLogoDark {
-    display: inline-block;
-    width: 10vmax;
-    height: 5vmax;
+
+  div {
+    display: flex;
+    width: 80%;
+    border: 1px solid blue; //debug
+    .headerLogoLight,
+    .headerLogoDark {
+      display: inline-block;
+      width: 15vmax;
+      height: 7.5vmax;
+      margin: 0;
+      padding: 0;
+      border: 1px solid green; //debug
+    }
   }
 }
 @media (max-width: $tablet-bp) {

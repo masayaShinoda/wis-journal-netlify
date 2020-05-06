@@ -35,14 +35,14 @@ body {
     color: $clr-primary;
   }
   h1 {
-    font-weight: 700;
+    //font-weight: 700;
     line-height: 1.4;
     margin-bottom: 0.5em;
     font-family: $font-heading;
   }
   h2 {
     font-size: 1.6em;
-    font-weight: 500;
+    //font-weight: 500;
     line-height: 1.4;
     font-family: $font-subheading;
   }
@@ -51,7 +51,7 @@ body {
     display: block;
     color: transparentize($clr-primary, 0.25);
     font-size: 1.1em;
-    font-weight: 400;
+    //font-weight: 400;
     font-family: $font-heading;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -63,7 +63,7 @@ body {
   ul {
     color: $clr-dark;
     font-family: $font-primary;
-    font-weight: 400;
+    //font-weight: 400;
     line-height: 1.6;
   }
   a {
@@ -136,7 +136,7 @@ body {
     p {
       font-family: $font-heading;
       font-size: 0.8em;
-      font-weight: 400;
+      //font-weight: 400;
     }
   }
   @media (max-width: $tablet-bp) {
@@ -169,14 +169,14 @@ body.dark {
     color: $clr-primary-darkmode;
   }
   h1 {
-    font-weight: 700;
+    //font-weight: 700;
     line-height: 1.4;
     margin-bottom: 0.5em;
     font-family: $font-heading;
   }
   h2 {
     font-size: 1.6em;
-    font-weight: 500;
+    //font-weight: 500;
     line-height: 1.4;
     font-family: $font-subheading;
   }
@@ -185,7 +185,7 @@ body.dark {
     display: block;
     color: transparentize($clr-primary-darkmode, 0.25);
     font-size: 1.1em;
-    font-weight: 400;
+    //font-weight: 400;
     font-family: $font-heading;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -197,7 +197,7 @@ body.dark {
   ul {
     color: $clr-light;
     font-family: $font-primary;
-    font-weight: 400;
+    //font-weight: 400;
     line-height: 1.6;
   }
   a {
@@ -270,7 +270,7 @@ body.dark {
     p {
       font-family: $font-heading;
       font-size: 0.8em;
-      font-weight: 400;
+      //font-weight: 400;
     }
   }
   @media (max-width: $tablet-bp) {

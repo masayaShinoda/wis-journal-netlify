@@ -432,35 +432,12 @@ header div nav a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 3.75vmax;
-}
-
-.pageContainer .frontPageContainer {
-  width: 65%;
-}
-
-@media (max-width: 1023px) {
-  .pageContainer .frontPageContainer {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .pageContainer .frontPageContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 95%;
-  }
+  border: 1px solid red;
+  width: 20px;
+  height: 200px;
 }
 /*# sourceMappingURL=styles.css.map */

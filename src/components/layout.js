@@ -9,12 +9,11 @@ import resetStyles from "../styles/reset.css"
 //components import
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
-    <div>
+    <>
       <Header></Header>
-      {children}
-    </div>
+    </>
   )
 }
 export default Layout

@@ -376,19 +376,137 @@ header {
 }
 
 //header component end
-//index.js
+
+//pagecontainer is parent in layout.js start
 .pageContainer {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  width: 20px;
-  height: 200px;
+  align-items: center;
+  .postsContainer {
+    width: 65%;
+    margin: 4.75vmin 0;
+    //post-link component
+    ul {
+      display: flex;
+      flex-direction: column-reverse;
+      //flex-direction: column;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: inherit;
+        padding: inherit;
+        margin-bottom: 3.75vh;
+        //margin-left: 0.5vmax;
+        h2 {
+          border-bottom: 2px solid $clr-secondary;
+          margin-bottom: 1.25vh;
+          line-height: 1.4;
+          max-width: fit-content;
+        }
+        p {
+          // the date in blog.js
+          max-width: 65%;
+          margin: inherit;
+          padding: inherit;
+          color: $clr-primary;
+        }
+        a:hover p {
+          color: darken($clr-primary, 15%);
+        }
+        @media (max-width: $tablet-bp) {
+          h2 {
+            font-size: 1.5em;
+          }
+          p {
+            max-width: 80%;
+          }
+        }
+        @media (max-width: $mobile-bp) {
+          h2 {
+            font-size: 1.5em;
+          }
+          p {
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $tablet-bp) {
+    .postsContainer {
+      width: 80%;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    .postsContainer {
+      width: 95%;
+    }
+  }
 }
 
-//post-link component
-.postLink {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border: 1px solid red; //debug
+//template for posts
+.blogTemplate {
+  .blogPostTitle {
+    font-size: 2em;
+    line-height: 1.4;
+    border-bottom: 2px solid $clr-secondary;
+    max-width: fit-content;
+  }
+  @media (max-width: $tablet-bp) {
+    .blogPostTitle {
+      font-size: 2em;
+      line-height: 1.4;
+      border-bottom: 2px solid $clr-secondary;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    .blogPostTitle {
+      font-size: 2em;
+      line-height: 1.4;
+      border-bottom: 2px solid $clr-secondary;
+    }
+  }
+  .blogContent {
+    margin: 3.75vmin 0;
+    h1 {
+      font-size: 1.6em;
+      font-family: $font-heading;
+      // template blog h1
+      //font-size: 2em;
+      // margin: 0.8em 0;
+    }
+    h2 {
+      font-size: 1.4em;
+      font-family: $font-primary;
+      font-weight: 700;
+      //margin: 2.5vh;
+      margin: 0.5em 0;
+    }
+    h1,
+    h2,
+    p,
+    ul,
+    ol {
+      max-width: 65%;
+    }
+    @media (max-width: $tablet-bp) {
+      h1,
+      h2,
+      p,
+      ul,
+      ol {
+        max-width: 80%;
+      }
+    }
+    @media (max-width: $mobile-bp) {
+      h1,
+      h2,
+      p,
+      ul,
+      ol {
+        max-width: 100%;
+      }
+    }
+  }
 }

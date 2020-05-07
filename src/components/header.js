@@ -51,7 +51,7 @@ const Header = () => (
       <nav>
         <Link to="/">
           {" "}
-          <i className="fa fa-home" activeClassName="activLink"></i>Home
+          <i className="fa fa-home" activeClassName="activeLink"></i>Home
         </Link>
         <Link to="/">
           <i className="fa fa-newspaper-o"></i>News

@@ -10,7 +10,12 @@ import resetStyles from "../styles/reset.css"
 //components import
 import Header from "./header"
 
-const Layout = ({ children }) => <div>{children}</div>
+const Layout = ({ children }) => (
+  <div className="pageContainer">
+    <Header></Header>
+    {children}
+  </div>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

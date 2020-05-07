@@ -6,10 +6,14 @@ import "../styles/styles.css"
 
 const PostLink = ({ post }) => (
   <div>
-    <Link to={post.frontmatter.path} className="postLink">
-      <h2>{post.frontmatter.title}</h2>
-      <p>({post.frontmatter.date})</p>
-    </Link>
+    <ul className="postsList">
+      <li>
+        <Link to={post.frontmatter.path}>
+          <h2>{post.frontmatter.title}</h2>
+          <p>({post.frontmatter.date})</p>
+        </Link>
+      </li>
+    </ul>
   </div>
 )
 

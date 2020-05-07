@@ -379,8 +379,25 @@ header {
 //index.js
 .pageContainer {
   display: flex;
+  width: 100vw;
+  margin: 0 auto;
   flex-direction: column;
-  border: 1px solid red;
-  width: 20px;
-  height: 200px;
+  align-items: center;
+  margin-top: 3.75vmax;
+  //border: 1px solid red; //debug
+  .frontPageContainer {
+    width: 65%;
+    //border: 1px solid green; //debug
+  }
+  @media (max-width: $tablet-bp) {
+    .frontPageContainer {
+      width: 80%;
+    }
+  }
+  @media (max-width: $mobile-bp) {
+    .frontPageContainer {
+      flex-direction: column;
+      width: 95%;
+    }
+  }
 }

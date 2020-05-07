@@ -1,5 +1,5 @@
 ---
-path: 305-days-as-an-exchange-student
+path: /article/305-days-as-an-exchange-student
 date: 2020-02-23T06:10:00.000Z
 title: " 305 Days as an Exchange Student "
 author: Pich Keo Pisei and Pisey Monoromnea

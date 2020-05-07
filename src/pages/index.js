@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import PostLink from "../components/post-link"
@@ -19,18 +18,7 @@ const IndexPage = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
-  return (
-    <Layout>
-      <Helmet>
-        <meta name="title" content="WIS Journal" />
-        <meta
-          name="description"
-          content="Welcome to the student run newspaper covering events in Western International School."
-        />
-      </Helmet>
-      <div>{Posts}</div>
-    </Layout>
-  )
+  return <Layout>{Posts}</Layout>
 }
 
 export default IndexPage

@@ -40,6 +40,7 @@ $padding-standard: 2.5vmax 3.75vmax;
     .CardBody {
       display: flex;
       flex-direction: column;
+      margin: 0;
       padding: 0;
     }
     .CardImg {
@@ -91,6 +92,11 @@ $padding-standard: 2.5vmax 3.75vmax;
   .Columns:first-child {
     margin-top: 2.5vmin;
   }
+  .Columns:nth-child(odd) {
+    border: 0;
+    //border-top: 2px dashed $clr-primary-brightened;
+    //border-bottom: 2px dashed $clr-primary-brightened;
+  }
 }
 @media (max-width: $mobile-bp) {
   .Columns {
@@ -109,12 +115,21 @@ $padding-standard: 2.5vmax 3.75vmax;
 }
 
 //Frontpage component
+.bgContainer {
+  width: 100vw;
+  background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
 .frontpageContainer {
+  display: flex;
+  flex-direction: column;
   width: 65%;
   margin-top: 2.5vmin;
   padding: 2.5vmax 3.75vmax;
-  display: flex;
-  flex-direction: column;
   h2 {
     text-align: center;
     animation-name: frontpageText;
@@ -124,6 +139,22 @@ $padding-standard: 2.5vmax 3.75vmax;
   @keyframes frontpageText {
     0% {
       opacity: 0;
+    }
+  }
+}
+@media (max-width: $tablet-bp) {
+  .frontpageContainer {
+    width: 80%;
+    h2 {
+      text-align: left;
+    }
+  }
+}
+@media (max-width: $mobile-bp) {
+  .frontpageContainer {
+    width: 95%;
+    h2 {
+      text-align: left;
     }
   }
 }

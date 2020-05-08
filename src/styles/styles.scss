@@ -305,6 +305,7 @@ header {
   display: flex;
   width: 100vw;
   padding-top: 4.25vmax;
+  padding-bottom: 2.5vmax;
   //width: 65vmax;
   //border: 1px solid red; //debug
   div {
@@ -383,7 +384,7 @@ header {
   align-items: center;
   .postsContainer {
     width: 65%;
-    margin: 4.75vmin 0;
+    padding-top: 2.5vmax;
     display: flex;
     flex-wrap: wrap;
     //border: 1px solid yellow; //debug
@@ -438,11 +439,13 @@ header {
   @media (max-width: $tablet-bp) {
     .postsContainer {
       width: 80%;
+      margin: 1.25vmin 0;
     }
   }
   @media (max-width: $mobile-bp) {
     .postsContainer {
       width: 95%;
+      margin: 1.25vmin 0;
     }
   }
 }

@@ -34,6 +34,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
   padding: 0;
 }
 
@@ -84,6 +85,9 @@
   .Columns:first-child {
     margin-top: 2.5vmin;
   }
+  .Columns:nth-child(odd) {
+    border: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -103,10 +107,21 @@
   }
 }
 
+.bgContainer {
+  width: 100vw;
+  background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .frontpageContainer {
-  width: 65%;
-  margin-top: 2.5vmin;
-  padding: 2.5vmax 3.75vmax;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +129,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 65%;
+  margin-top: 2.5vmin;
+  padding: 2.5vmax 3.75vmax;
 }
 
 .frontpageContainer h2 {
@@ -135,6 +153,24 @@
 @keyframes frontpageText {
   0% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .frontpageContainer {
+    width: 80%;
+  }
+  .frontpageContainer h2 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .frontpageContainer {
+    width: 95%;
+  }
+  .frontpageContainer h2 {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=Component.module.css.map */

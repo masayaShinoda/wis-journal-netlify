@@ -20,8 +20,10 @@ const Frontpage = () => {
     }
   `)
   return (
-    <div className={styles.frontpageContainer}>
-      <h2>{data.site.siteMetadata.description}</h2>
+    <div className={styles.bgContainer}>
+      <div className={styles.frontpageContainer}>
+        <h2>{data.site.siteMetadata.description}</h2>
+      </div>
     </div>
   )
 }

@@ -330,6 +330,7 @@ header {
   display: flex;
   width: 100vw;
   padding-top: 4.25vmax;
+  padding-bottom: 2.5vmax;
 }
 
 header div {
@@ -440,7 +441,7 @@ header div nav a i {
 
 .pageContainer .postsContainer {
   width: 65%;
-  margin: 4.75vmin 0;
+  padding-top: 2.5vmax;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,12 +509,14 @@ header div nav a i {
 @media (max-width: 1023px) {
   .pageContainer .postsContainer {
     width: 80%;
+    margin: 1.25vmin 0;
   }
 }
 
 @media (max-width: 480px) {
   .pageContainer .postsContainer {
     width: 95%;
+    margin: 1.25vmin 0;
   }
 }
 

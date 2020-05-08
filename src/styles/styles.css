@@ -413,6 +413,7 @@ header div nav a i {
 @media (max-width: 1023px) {
   header div {
     width: 80%;
+    padding-bottom: 2.5vmax;
   }
 }
 
@@ -423,6 +424,7 @@ header div nav a i {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 95%;
+    padding-bottom: 2.5vmax;
   }
 }
 

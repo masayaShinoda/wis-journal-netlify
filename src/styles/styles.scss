@@ -365,12 +365,15 @@ header {
   @media (max-width: $tablet-bp) {
     div {
       width: 80%;
+      padding-bottom: 2.5vmax;
     }
   }
   @media (max-width: $mobile-bp) {
     div {
       flex-direction: column;
       width: 95%;
+      padding-bottom: 2.5vmax;
+      //border: 1px solid red;
     }
   }
 }

@@ -117,12 +117,14 @@ $padding-standard: 2.5vmax 3.75vmax;
 //Frontpage component
 .bgContainer {
   width: 100vw;
+  min-height: 35vmin;
   background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .frontpageContainer {
   display: flex;
@@ -135,6 +137,8 @@ $padding-standard: 2.5vmax 3.75vmax;
     animation-name: frontpageText;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    color: $clr-light;
+    text-shadow: 1px 2px $clr-dark;
   }
   @keyframes frontpageText {
     0% {

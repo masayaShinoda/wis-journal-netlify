@@ -109,6 +109,7 @@
 
 .bgContainer {
   width: 100vw;
+  min-height: 35vmin;
   background: url("https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg");
   background-position: center;
   background-size: cover;
@@ -119,6 +120,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .frontpageContainer {
@@ -142,6 +146,8 @@
           animation-duration: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  color: white;
+  text-shadow: 1px 2px #333333;
 }
 
 @-webkit-keyframes frontpageText {

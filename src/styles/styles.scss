@@ -243,11 +243,12 @@ body.dark {
   figure {
     max-width: 45%;
     border-radius: 2.5em;
-    margin: 4.25vh 0;
+    margin: 4.25vmin 0;
     margin-left: 2.5vmin;
     img {
       //border-radius: 2.5vmin;
       color: $clr-darker;
+      margin: 0;
     }
     figcaption {
       font-size: 0.9em;

@@ -137,7 +137,7 @@ $padding-standard: 2.5vmax 3.75vmax;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     color: $clr-light;
-    text-shadow: 1px 1px $clr-dark;
+    text-shadow: 1px 1px 3px $clr-primary;
   }
   @keyframes frontpageText {
     0% {

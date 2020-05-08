@@ -262,12 +262,13 @@ body.dark .fa {
 body.dark figure {
   max-width: 45%;
   border-radius: 2.5em;
-  margin: 4.25vh 0;
+  margin: 4.25vmin 0;
   margin-left: 2.5vmin;
 }
 
 body.dark figure img {
   color: #939ebf;
+  margin: 0;
 }
 
 body.dark figure figcaption {

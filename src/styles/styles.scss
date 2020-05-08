@@ -21,7 +21,7 @@ $tablet-bp: 1023px;
 $mobile-bp: 480px;
 
 ::selection {
-  background: $clr-dark;
+  background: $clr-primary;
   color: $clr-light;
 }
 //global
@@ -450,24 +450,25 @@ header {
 
 //template for posts
 .blogTemplate {
+  margin: 3.75vmin 0;
   .blogPostTitle {
     font-size: 2em;
     line-height: 1.4;
-    border-bottom: 2px solid $clr-secondary;
+    border-bottom: 2px solid $clr-primary-brightened;
     max-width: fit-content;
   }
   @media (max-width: $tablet-bp) {
     .blogPostTitle {
       font-size: 2em;
       line-height: 1.4;
-      border-bottom: 2px solid $clr-secondary;
+      border-bottom: 2px solid $clr-primary-brightened;
     }
   }
   @media (max-width: $mobile-bp) {
     .blogPostTitle {
       font-size: 2em;
       line-height: 1.4;
-      border-bottom: 2px solid $clr-secondary;
+      border-bottom: 2px solid $clr-primary-brightened;
     }
   }
   .blogContent {

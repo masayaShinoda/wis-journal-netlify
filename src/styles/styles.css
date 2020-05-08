@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 ::-moz-selection {
-  background: #333333;
+  background: #3b4259;
   color: white;
 }
 ::selection {
-  background: #333333;
+  background: #3b4259;
   color: white;
 }
 
@@ -520,10 +520,14 @@ header div nav a i {
   }
 }
 
+.blogTemplate {
+  margin: 3.75vmin 0;
+}
+
 .blogTemplate .blogPostTitle {
   font-size: 2em;
   line-height: 1.4;
-  border-bottom: 2px solid #d5dff2;
+  border-bottom: 2px solid #596487;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -533,7 +537,7 @@ header div nav a i {
   .blogTemplate .blogPostTitle {
     font-size: 2em;
     line-height: 1.4;
-    border-bottom: 2px solid #d5dff2;
+    border-bottom: 2px solid #596487;
   }
 }
 
@@ -541,7 +545,7 @@ header div nav a i {
   .blogTemplate .blogPostTitle {
     font-size: 2em;
     line-height: 1.4;
-    border-bottom: 2px solid #d5dff2;
+    border-bottom: 2px solid #596487;
   }
 }
 

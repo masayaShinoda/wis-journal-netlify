@@ -43,23 +43,21 @@
 }
 
 .Columns .Card h2 {
-  border-bottom: 2px solid #d5dff2;
-  margin-bottom: 1.25vh;
+  border-bottom: 2px solid #727da2;
+  margin-bottom: 0.5vmin;
   line-height: 1.4;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  font-family: "Karma", serif;
 }
 
 .Columns .Card p {
   max-width: 65%;
   margin: inherit;
   padding: inherit;
-  color: #596487;
-}
-
-.Columns .Card a:hover p {
-  color: #1d202b;
+  font-family: "Assistant", sans-serif;
+  color: #727da2;
 }
 
 @media (max-width: 1023px) {

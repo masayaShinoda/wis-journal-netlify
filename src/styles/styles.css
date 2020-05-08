@@ -68,6 +68,7 @@ body ul {
 body a {
   color: #3b4259;
   text-decoration: none;
+  font-family: "Karma", serif;
 }
 
 body a p {
@@ -117,8 +118,6 @@ body figure {
 
 body figure img {
   color: #939ebf;
-  outline: 0.25vmin solid rgba(147, 158, 191, 0.625);
-  outline-offset: 2.5vmin;
 }
 
 body figure figcaption {
@@ -269,8 +268,6 @@ body.dark figure {
 
 body.dark figure img {
   color: #939ebf;
-  outline: 0.25vmin solid rgba(147, 158, 191, 0.625);
-  outline-offset: 2.5vmin;
 }
 
 body.dark figure figcaption {

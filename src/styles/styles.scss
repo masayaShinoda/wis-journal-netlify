@@ -73,6 +73,7 @@ body {
   a {
     color: $clr-primary;
     text-decoration: none;
+    font-family: $font-heading;
     p {
       color: $clr-primary;
       margin: 1.25vmin 2.5vmin;
@@ -112,8 +113,6 @@ body {
     img {
       //border-radius: 2.5vmin;
       color: $clr-darker;
-      outline: 0.25vmin solid transparentize($clr-darker, 0.375);
-      outline-offset: 2.5vmin;
     }
     figcaption {
       font-size: 0.9em;
@@ -247,8 +246,6 @@ body.dark {
     img {
       //border-radius: 2.5vmin;
       color: $clr-darker;
-      outline: 0.25vmin solid transparentize($clr-darker, 0.375);
-      outline-offset: 2.5vmin;
     }
     figcaption {
       font-size: 0.9em;

@@ -1,20 +1,41 @@
 import React from "react"
 import { Link } from "gatsby"
+import {
+  Card,
+  Button,
+  CardImg,
+  CardTitle,
+  CardText,
+  CardColumns,
+  CardSubtitle,
+  CardBody,
+} from "reactstrap"
 
 //styles import
 import "../styles/styles.css"
+import styles from "./Component.module.css"
 
 const PostLink = ({ post }) => (
-  <div>
-    <ul className="postsList">
-      <li>
-        <Link to={post.frontmatter.path}>
-          <h2>{post.frontmatter.title}</h2>
-          <p>({post.frontmatter.date})</p>
-        </Link>
-      </li>
-    </ul>
-  </div>
+  <CardColumns className={styles.Columns}>
+    <Card className={styles.Card}>
+      <CardBody className={styles.CardBody}>
+        <CardTitle>
+          <Link to={post.frontmatter.path}>
+            <h2>{post.frontmatter.title}</h2>
+          </Link>
+        </CardTitle>
+        <CardSubtitle>{post.frontmatter.tags}</CardSubtitle>
+        <CardText>
+          <p>{post.frontmatter.date}</p>
+        </CardText>
+      </CardBody>
+      <CardImg
+        className={styles.CardImg}
+        src="https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg"
+        alt="Card image cap"
+      />
+    </Card>
+  </CardColumns>
 )
 
 export default PostLink

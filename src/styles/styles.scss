@@ -385,6 +385,9 @@ header {
   .postsContainer {
     width: 65%;
     margin: 4.75vmin 0;
+    display: flex;
+    flex-wrap: wrap;
+    //border: 1px solid yellow; //debug
     //post-link component
     ul {
       display: flex;
@@ -409,7 +412,7 @@ header {
           max-width: 65%;
           margin: inherit;
           padding: inherit;
-          color: $clr-primary;
+          color: $clr-primary-brightened;
         }
         a:hover p {
           color: darken($clr-primary, 15%);

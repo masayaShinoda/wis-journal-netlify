@@ -6,6 +6,8 @@ import PostLink from "../components/post-link"
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.css"
 
+//components import
+
 //styles import
 import "../styles/styles.css"
 

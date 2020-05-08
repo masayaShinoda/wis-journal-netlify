@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+.Columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  max-width: 50%;
+  background: none;
+}
+
+.Columns .Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: none;
+  padding: 2.5vmax;
+}
+
+.Columns .Card .CardBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.Columns .Card .CardImg {
+  width: 100%;
+  margin-top: 3.75vmin;
+}
+
+.Columns .Card h2 {
+  border-bottom: 2px solid #d5dff2;
+  margin-bottom: 1.25vh;
+  line-height: 1.4;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.Columns .Card p {
+  max-width: 65%;
+  margin: inherit;
+  padding: inherit;
+  color: #596487;
+}
+
+.Columns .Card a:hover p {
+  color: #1d202b;
+}
+
+@media (max-width: 1023px) {
+  .Columns .Card h2 {
+    font-size: 1.5em;
+  }
+  .Columns .Card p {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Columns .Card h2 {
+    font-size: 1.5em;
+  }
+  .Columns .Card p {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .Columns {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .Columns .Card .CardBody {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=Component.module.css.map */

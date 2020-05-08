@@ -444,6 +444,11 @@ header div nav a i {
 .pageContainer .postsContainer {
   width: 65%;
   margin: 4.75vmin 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pageContainer .postsContainer ul {
@@ -478,7 +483,7 @@ header div nav a i {
   max-width: 65%;
   margin: inherit;
   padding: inherit;
-  color: #3b4259;
+  color: #596487;
 }
 
 .pageContainer .postsContainer ul li a:hover p {

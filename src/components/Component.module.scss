@@ -25,7 +25,6 @@ $mobile-bp: 480px;
   //width: 65%;
   display: flex;
   //border: 1px solid red; //debug
-  background: $clr-light;
   max-width: 50%;
   background: none;
   .Card {
@@ -57,7 +56,7 @@ $mobile-bp: 480px;
       margin: inherit;
       padding: inherit;
       font-family: $font-subheading;
-      color: $clr-primary-brightened;
+      //color: $clr-primary-brightened;
     }
     @media (max-width: $tablet-bp) {
       h2 {

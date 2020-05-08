@@ -5,7 +5,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: white;
   max-width: 50%;
   background: none;
 }
@@ -57,7 +56,6 @@
   margin: inherit;
   padding: inherit;
   font-family: "Assistant", sans-serif;
-  color: #727da2;
 }
 
 @media (max-width: 1023px) {

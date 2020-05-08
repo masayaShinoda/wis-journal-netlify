@@ -15,6 +15,18 @@ module.exports = {
     siteUrl: `https://wis-journal.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `WIS Journal`,
+        short_name: `WIS Journal`,
+        start_url: `/`,
+        background_color: `#3b4259`,
+        theme_color: `#3b4259`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,

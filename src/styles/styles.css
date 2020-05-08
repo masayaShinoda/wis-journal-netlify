@@ -117,12 +117,12 @@ body figure {
 }
 
 body figure img {
-  color: #939ebf;
+  color: #596487;
 }
 
 body figure figcaption {
   font-size: 0.9em;
-  color: #939ebf;
+  color: #596487;
 }
 
 @media (max-width: 1023px) {

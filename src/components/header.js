@@ -53,7 +53,7 @@ const Header = () => (
           {" "}
           <i className="fa fa-home" activeClassName="activeLink"></i>Home
         </Link>
-        <Link to="/">
+        <Link to="#news">
           <i className="fa fa-newspaper-o"></i>News
         </Link>
         <Link to="/">

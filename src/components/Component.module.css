@@ -22,7 +22,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: none;
-  padding: 2.5vmax;
+  padding: 2.5vmax 3.75vmax;
+  border: none;
 }
 
 .Columns .Card .CardBody {
@@ -38,6 +39,8 @@
 
 .Columns .Card .CardImg {
   width: 100%;
+  margin: 0;
+  padding: 0;
   margin-top: 2.5vmin;
 }
 
@@ -59,26 +62,27 @@
 }
 
 @media (max-width: 1023px) {
-  .Columns .Card h2 {
-    font-size: 1.5em;
-  }
   .Columns .Card p {
     max-width: 80%;
   }
 }
 
 @media (max-width: 480px) {
-  .Columns .Card h2 {
-    font-size: 1.5em;
-  }
   .Columns .Card p {
     max-width: 90%;
   }
 }
 
+.Columns:nth-child(odd) {
+  border-right: 2px dashed #727da2;
+}
+
 @media (max-width: 1023px) {
   .Columns {
     max-width: 80%;
+  }
+  .Columns:first-child {
+    margin-top: 2.5vmin;
   }
 }
 
@@ -93,6 +97,9 @@
   .Columns .Card .CardBody {
     padding: 0;
     max-width: 100%;
+  }
+  .Columns:first-child {
+    margin-top: 2.5vmin;
   }
 }
 /*# sourceMappingURL=Component.module.css.map */

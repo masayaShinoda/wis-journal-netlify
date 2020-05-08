@@ -7,6 +7,7 @@ import PostLink from "../components/post-link"
 import "bootstrap/dist/css/bootstrap.css"
 
 //components import
+import Frontpage from "../components/frontpage"
 
 //styles import
 import "../styles/styles.css"
@@ -22,7 +23,10 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <div className="postsContainer">{Posts}</div>
+      <Frontpage />
+      <div className="postsContainer" id="news">
+        {Posts}
+      </div>
     </Layout>
   )
 }

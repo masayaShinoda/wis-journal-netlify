@@ -19,21 +19,24 @@ $clr-dark: #333333;
 $desktop-bp: 1024px;
 $tablet-bp: 1023px;
 $mobile-bp: 480px;
+//standard
+$padding-standard: 2.5vmax 3.75vmax;
 
 //columns component
 .Columns {
   //width: 65%;
   display: flex;
-  //border: 1px solid red; //debug
   max-width: 50%;
   background: none;
+  //border: 1px solid red; //debug
   .Card {
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
     justify-content: space-between;
     background: none;
-    padding: 2.5vmax;
+    padding: $padding-standard;
+    border: none;
     .CardBody {
       display: flex;
       flex-direction: column;
@@ -41,6 +44,8 @@ $mobile-bp: 480px;
     }
     .CardImg {
       width: 100%;
+      margin: 0;
+      padding: 0;
       margin-top: 2.5vmin;
     }
     h2 {
@@ -60,7 +65,7 @@ $mobile-bp: 480px;
     }
     @media (max-width: $tablet-bp) {
       h2 {
-        font-size: 1.5em;
+        //font-size: 1.5em;
       }
       p {
         max-width: 80%;
@@ -68,7 +73,7 @@ $mobile-bp: 480px;
     }
     @media (max-width: $mobile-bp) {
       h2 {
-        font-size: 1.5em;
+        //font-size: 1.5em;
       }
       p {
         max-width: 90%;
@@ -76,9 +81,15 @@ $mobile-bp: 480px;
     }
   }
 }
+.Columns:nth-child(odd) {
+  border-right: 2px dashed $clr-primary-brightened;
+}
 @media (max-width: $tablet-bp) {
   .Columns {
     max-width: 80%;
+  }
+  .Columns:first-child {
+    margin-top: 2.5vmin;
   }
 }
 @media (max-width: $mobile-bp) {
@@ -91,5 +102,8 @@ $mobile-bp: 480px;
         max-width: 100%;
       }
     }
+  }
+  .Columns:first-child {
+    margin-top: 2.5vmin;
   }
 }

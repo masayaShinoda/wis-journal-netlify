@@ -6,6 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `WIS Journal`,
+    description: `Welcome to the student run newspaper covering events in Western International School.`,
+    url: `https://wis-journal.com`,
+    author: `Masaya Shida`,
+    copyright: `Masaya Shida`,
+    siteUrl: `https://wis-journal.com`,
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     {

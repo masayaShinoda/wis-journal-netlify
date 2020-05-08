@@ -52,14 +52,13 @@
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  font-family: "Karma", serif;
 }
 
 .Columns .Card p {
   max-width: 65%;
   margin: inherit;
   padding: inherit;
-  font-family: "Assistant", sans-serif;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 1023px) {
@@ -75,7 +74,7 @@
 }
 
 .Columns:nth-child(odd) {
-  border-right: 2px dashed #727da2;
+  border-right: 2px dashed rgba(114, 125, 162, 0.5);
 }
 
 @media (max-width: 1023px) {

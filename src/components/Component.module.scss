@@ -54,14 +54,13 @@ $padding-standard: 2.5vmax 3.75vmax;
       margin-bottom: 0.5vmin;
       line-height: 1.4;
       max-width: fit-content;
-      font-family: $font-heading;
     }
     p {
       // the date in blog.js
       max-width: 65%;
       margin: inherit;
       padding: inherit;
-      font-family: $font-subheading;
+      font-size: 0.8rem;
       //color: $clr-primary-brightened;
     }
     @media (max-width: $tablet-bp) {
@@ -83,7 +82,7 @@ $padding-standard: 2.5vmax 3.75vmax;
   }
 }
 .Columns:nth-child(odd) {
-  border-right: 2px dashed $clr-primary-brightened;
+  border-right: 2px dashed transparentize($clr-primary-brightened, 0.5);
 }
 @media (max-width: $tablet-bp) {
   .Columns {

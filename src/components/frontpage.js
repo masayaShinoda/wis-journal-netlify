@@ -1,6 +1,9 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
+//styles import
+import styles from "./Component.module.css"
+
 const Frontpage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -17,15 +20,7 @@ const Frontpage = () => {
     }
   `)
   return (
-    <div
-      style={{
-        width: `65%`,
-        marginTop: `2.5vmin`,
-        padding: `2.5vmax 3.75vmax`,
-        display: `flex`,
-        justifyContent: `center`,
-      }}
-    >
+    <div className={styles.frontpageContainer}>
       <h2>{data.site.siteMetadata.description}</h2>
     </div>
   )

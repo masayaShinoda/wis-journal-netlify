@@ -107,3 +107,23 @@ $padding-standard: 2.5vmax 3.75vmax;
     margin-top: 2.5vmin;
   }
 }
+
+//Frontpage component
+.frontpageContainer {
+  width: 65%;
+  margin-top: 2.5vmin;
+  padding: 2.5vmax 3.75vmax;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+    animation-name: frontpageText;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes frontpageText {
+    0% {
+      opacity: 0;
+    }
+  }
+}

@@ -28,7 +28,7 @@ $padding-standard: 1.75vmax 2.5vmax;
   display: flex;
   max-width: 50%;
   background: none;
-  //border: 1px solid red; //debug
+  border-bottom: 2px dashed transparentize($clr-primary-brightened, 0.5); //debug
   .Card {
     display: flex;
     flex-wrap: wrap;
@@ -82,9 +82,9 @@ $padding-standard: 1.75vmax 2.5vmax;
     }
   }
 }
-.Columns:nth-child(odd) {
+/*.Columns:nth-child(odd) {
   //border-right: 2px dashed transparentize($clr-primary-brightened, 0.5);
-}
+}*/
 @media (max-width: $tablet-bp) {
   .Columns {
     max-width: 80%;
@@ -92,16 +92,12 @@ $padding-standard: 1.75vmax 2.5vmax;
   .Columns:first-child {
     margin-top: 2.5vmin;
   }
-  .Columns:nth-child(odd) {
-    border: 0;
-    //border-top: 2px dashed $clr-primary-brightened;
-    //border-bottom: 2px dashed $clr-primary-brightened;
-  }
 }
 @media (max-width: $mobile-bp) {
   .Columns {
     flex-direction: column;
     max-width: 100%;
+    border: 0;
     .Card {
       .CardBody {
         padding: 0;

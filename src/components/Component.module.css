@@ -7,6 +7,7 @@
   display: flex;
   max-width: 50%;
   background: none;
+  border-bottom: 2px dashed rgba(114, 125, 162, 0.5);
 }
 
 .Columns .Card {
@@ -82,15 +83,15 @@
   }
 }
 
+/*.Columns:nth-child(odd) {
+  //border-right: 2px dashed transparentize($clr-primary-brightened, 0.5);
+}*/
 @media (max-width: 1023px) {
   .Columns {
     max-width: 80%;
   }
   .Columns:first-child {
     margin-top: 2.5vmin;
-  }
-  .Columns:nth-child(odd) {
-    border: 0;
   }
 }
 
@@ -101,6 +102,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 100%;
+    border: 0;
   }
   .Columns .Card .CardBody {
     padding: 0;

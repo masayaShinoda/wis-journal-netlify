@@ -24,7 +24,9 @@ const PostLink = ({ post }) => (
             <h2>{post.frontmatter.title}</h2>
           </Link>
         </CardTitle>
-        <CardSubtitle>{post.frontmatter.tags}</CardSubtitle>
+        <CardSubtitle>
+          <p>{post.frontmatter.tags}</p>
+        </CardSubtitle>
         <CardText>
           <p>{post.frontmatter.date}</p>
         </CardText>

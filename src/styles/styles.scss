@@ -461,6 +461,7 @@ header {
   padding: $padding-standard;
   padding-top: 0; //cancel out postsContainer padding property
   .blogPostTitle {
+    font-size: 1.8rem;
     line-height: 1.4;
     border-bottom: 2px solid $clr-primary-brightened;
     max-width: fit-content;

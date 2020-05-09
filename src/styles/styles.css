@@ -531,6 +531,7 @@ header div nav a i {
 }
 
 .blogTemplate .blogPostTitle {
+  font-size: 1.8rem;
   line-height: 1.4;
   border-bottom: 2px solid #596487;
   max-width: -webkit-fit-content;

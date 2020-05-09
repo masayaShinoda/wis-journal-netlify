@@ -4,6 +4,7 @@ date: 2020-02-23T05:03:05.810Z
 title: "World Scholar's Cup 2019 "
 author: Sok Vichny & Ngov Muyhung
 tags: Events
+featuredImage: https://masayashinoda.github.io/wis-news/images/wsc-2019-2.jpg
 ---
 ## What is the World Scholar’s Cup?
 

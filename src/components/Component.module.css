@@ -52,6 +52,7 @@
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  font-family: "Karma", serif;
 }
 
 .Columns .Card p {
@@ -62,12 +63,18 @@
 }
 
 @media (max-width: 1023px) {
+  .Columns .Card h2 {
+    font-size: 1.5rem;
+  }
   .Columns .Card p {
     max-width: 80%;
   }
 }
 
 @media (max-width: 480px) {
+  .Columns .Card h2 {
+    font-size: 1.4rem;
+  }
   .Columns .Card p {
     max-width: 90%;
   }
@@ -141,8 +148,8 @@
   text-align: center;
   -webkit-animation-name: frontpageText;
           animation-name: frontpageText;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   color: white;

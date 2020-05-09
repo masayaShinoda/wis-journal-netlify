@@ -54,6 +54,7 @@ $padding-standard: 2.5vmax 3.75vmax;
       margin-bottom: 0.5vmin;
       line-height: 1.4;
       max-width: fit-content;
+      font-family: $font-heading;
     }
     p {
       // the date in blog.js
@@ -65,7 +66,7 @@ $padding-standard: 2.5vmax 3.75vmax;
     }
     @media (max-width: $tablet-bp) {
       h2 {
-        //font-size: 1.5em;
+        font-size: 1.5rem;
       }
       p {
         max-width: 80%;
@@ -73,7 +74,7 @@ $padding-standard: 2.5vmax 3.75vmax;
     }
     @media (max-width: $mobile-bp) {
       h2 {
-        //font-size: 1.5em;
+        font-size: 1.4rem;
       }
       p {
         max-width: 90%;
@@ -134,7 +135,7 @@ $padding-standard: 2.5vmax 3.75vmax;
   h2 {
     text-align: center;
     animation-name: frontpageText;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     color: $clr-light;
     text-shadow: 1px 1px 3px $clr-primary;

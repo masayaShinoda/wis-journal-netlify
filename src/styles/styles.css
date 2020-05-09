@@ -112,7 +112,7 @@ body .fa {
 body figure {
   max-width: 45%;
   border-radius: 2.5em;
-  margin: 4.25vh 0;
+  margin: 4.25vmin 0;
   margin-left: 2.5vmin;
 }
 
@@ -134,6 +134,7 @@ body figure figcaption {
 @media (max-width: 480px) {
   body figure {
     max-width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -274,6 +275,7 @@ body.dark figure img {
 body.dark figure figcaption {
   font-size: 0.9em;
   color: #939ebf;
+  margin-top: 0.8em;
 }
 
 @media (max-width: 1023px) {
@@ -524,11 +526,11 @@ header div nav a i {
 }
 
 .blogTemplate {
-  margin: 3.75vmin 0;
+  padding: 2.5vmax 3.75vmax;
+  padding-top: 0;
 }
 
 .blogTemplate .blogPostTitle {
-  font-size: 2em;
   line-height: 1.4;
   border-bottom: 2px solid #596487;
   max-width: -webkit-fit-content;
@@ -538,7 +540,7 @@ header div nav a i {
 
 @media (max-width: 1023px) {
   .blogTemplate .blogPostTitle {
-    font-size: 2em;
+    font-size: 1.6rem;
     line-height: 1.4;
     border-bottom: 2px solid #596487;
   }
@@ -546,7 +548,7 @@ header div nav a i {
 
 @media (max-width: 480px) {
   .blogTemplate .blogPostTitle {
-    font-size: 2em;
+    font-size: 1.6rem;
     line-height: 1.4;
     border-bottom: 2px solid #596487;
   }

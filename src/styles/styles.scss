@@ -110,7 +110,7 @@ body {
   figure {
     max-width: 45%;
     border-radius: 2.5em;
-    margin: 4.25vh 0;
+    margin: 4.25vmin 0;
     margin-left: 2.5vmin;
     img {
       //border-radius: 2.5vmin;
@@ -130,6 +130,7 @@ body {
   @media (max-width: $mobile-bp) {
     figure {
       max-width: 100%;
+      margin-left: 0;
     }
   }
   blockquote {
@@ -253,7 +254,7 @@ body.dark {
     figcaption {
       font-size: 0.9em;
       color: $clr-darker;
-      //margin-top: -1em;
+      margin-top: 0.8em;
     }
   }
   @media (max-width: $tablet-bp) {
@@ -456,23 +457,24 @@ header {
 
 //template for posts
 .blogTemplate {
-  margin: 3.75vmin 0;
+  //margin: 3.75vmin 0;
+  padding: $padding-standard;
+  padding-top: 0; //cancel out postsContainer padding property
   .blogPostTitle {
-    font-size: 2em;
     line-height: 1.4;
     border-bottom: 2px solid $clr-primary-brightened;
     max-width: fit-content;
   }
   @media (max-width: $tablet-bp) {
     .blogPostTitle {
-      font-size: 2em;
+      font-size: 1.6rem;
       line-height: 1.4;
       border-bottom: 2px solid $clr-primary-brightened;
     }
   }
   @media (max-width: $mobile-bp) {
     .blogPostTitle {
-      font-size: 2em;
+      font-size: 1.6rem;
       line-height: 1.4;
       border-bottom: 2px solid $clr-primary-brightened;
     }

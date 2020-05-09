@@ -94,11 +94,6 @@ body a:focus h2 {
   color: #596487;
 }
 
-body a:hover p,
-body a:focus p {
-  color: #596487;
-}
-
 body .activeLink {
   color: #596487;
 }
@@ -120,6 +115,7 @@ body figure {
 
 body figure img {
   color: #596487;
+  margin-bottom: 1.25vmax;
 }
 
 body figure figcaption {
@@ -452,6 +448,9 @@ header div nav a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

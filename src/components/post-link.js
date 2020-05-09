@@ -20,10 +20,10 @@ const PostLink = ({ post }) => (
     <Card className={styles.Card}>
       <Link to={post.frontmatter.path}>
         <CardBody className={styles.CardBody}>
-          <CardTitle>
-            <h2>{post.frontmatter.title}</h2>
+          <CardTitle style={{ margin: `0`, padding: `0` }}>
+            <h2 className={styles.CardTitle}>{post.frontmatter.title}</h2>
           </CardTitle>
-          <CardSubtitle>
+          <CardSubtitle className={styles.CardSubtitle}>
             <p>{post.frontmatter.tags}</p>
           </CardSubtitle>
           <CardText>

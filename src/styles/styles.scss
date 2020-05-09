@@ -94,9 +94,6 @@ body {
     h2 {
       color: $clr-primary-brightened;
     }
-    p {
-      color: $clr-primary-brightened;
-    }
   }
   .activeLink {
     color: $clr-primary-brightened;
@@ -117,6 +114,7 @@ body {
     img {
       //border-radius: 2.5vmin;
       color: $clr-primary-brightened;
+      margin-bottom: 1.25vmax;
     }
     figcaption {
       font-size: 0.9em;
@@ -393,6 +391,7 @@ header {
     width: 65%;
     padding-top: 2.5vmax;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     //border: 1px solid yellow; //debug
     //post-link component

@@ -46,15 +46,13 @@
   margin-top: 2.5vmin;
 }
 
-.Columns .Card h2 {
+.Columns .Card .CardTitle {
   border-bottom: 2px solid #727da2;
-  margin-bottom: 0.5vmin;
   line-height: 1.4;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 100%;
   font-family: "Karma", serif;
   font-size: 1.3rem;
+  margin-bottom: 0;
 }
 
 .Columns .Card p {
@@ -66,21 +64,40 @@
   font-size: 0.8rem;
 }
 
+.Columns .Card .CardSubtitle {
+  margin: 0;
+  line-height: 1;
+}
+
+.Columns .Card .CardSubtitle p {
+  display: inline-block;
+  background: #727da2;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  color: white;
+  padding: 0.25vmax 0.5vmax;
+}
+
 @media (max-width: 1023px) {
+  .Columns .Card {
+    /*p {
+        max-width: 80%;
+      }*/
+  }
   .Columns .Card h2 {
     font-size: 1.4rem;
-  }
-  .Columns .Card p {
-    max-width: 80%;
   }
 }
 
 @media (max-width: 480px) {
+  .Columns .Card {
+    /*p {
+        max-width: 90%;
+      }*/
+  }
   .Columns .Card h2 {
     font-size: 1.4rem;
-  }
-  .Columns .Card p {
-    max-width: 90%;
   }
 }
 

@@ -4,6 +4,7 @@ date: 2020-01-08T05:11:01.285Z
 title: "Give a Gift Project "
 author: Ung Morinin
 tags: Events
+featuredImage: https://masayashinoda.github.io/wis-news/images/give-a-gift-1.jpg
 ---
 A child is the greatest gift to have ever been bestowed upon any individual and every parent wants what is best for their own kid. Some may have been blessed with the ability to afford to cater to every need and want of their precious little jewels, while others may not be in the right financial state to do so, which is exactly how the Give A Gift Project came to be.
 

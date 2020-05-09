@@ -33,8 +33,8 @@ const PostLink = ({ post }) => (
       </CardBody>
       <CardImg
         className={styles.CardImg}
-        src="https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg"
-        alt="Card image cap"
+        src={post.frontmatter.featuredImage}
+        alt="image"
       />
     </Card>
   </CardColumns>

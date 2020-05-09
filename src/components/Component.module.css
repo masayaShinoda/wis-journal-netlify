@@ -5,7 +5,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 50%;
+  max-width: 33%;
   background: none;
   border-bottom: 2px dashed rgba(114, 125, 162, 0.5);
 }
@@ -40,7 +40,7 @@
 }
 
 .Columns .Card .CardImg {
-  width: 100%;
+  width: 95%;
   margin: 0;
   padding: 0;
   margin-top: 2.5vmin;
@@ -54,6 +54,7 @@
   max-width: -moz-fit-content;
   max-width: fit-content;
   font-family: "Karma", serif;
+  font-size: 1.3rem;
 }
 
 .Columns .Card p {
@@ -67,7 +68,7 @@
 
 @media (max-width: 1023px) {
   .Columns .Card h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .Columns .Card p {
     max-width: 80%;
@@ -88,10 +89,7 @@
 }*/
 @media (max-width: 1023px) {
   .Columns {
-    max-width: 80%;
-  }
-  .Columns:first-child {
-    margin-top: 2.5vmin;
+    max-width: 50%;
   }
 }
 

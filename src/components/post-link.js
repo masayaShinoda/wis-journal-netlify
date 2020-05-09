@@ -18,19 +18,19 @@ import styles from "./Component.module.css"
 const PostLink = ({ post }) => (
   <CardColumns className={styles.Columns}>
     <Card className={styles.Card}>
-      <CardBody className={styles.CardBody}>
-        <CardTitle>
-          <Link to={post.frontmatter.path}>
+      <Link to={post.frontmatter.path}>
+        <CardBody className={styles.CardBody}>
+          <CardTitle>
             <h2>{post.frontmatter.title}</h2>
-          </Link>
-        </CardTitle>
-        <CardSubtitle>
-          <p>{post.frontmatter.tags}</p>
-        </CardSubtitle>
-        <CardText>
-          <p>{post.frontmatter.date}</p>
-        </CardText>
-      </CardBody>
+          </CardTitle>
+          <CardSubtitle>
+            <p>{post.frontmatter.tags}</p>
+          </CardSubtitle>
+          <CardText>
+            <p>{post.frontmatter.date}</p>
+          </CardText>
+        </CardBody>
+      </Link>
       <CardImg
         className={styles.CardImg}
         src={post.frontmatter.featuredImage}

@@ -17,8 +17,8 @@ import styles from "./Component.module.css"
 
 const PostLink = ({ post }) => (
   <CardColumns className={styles.Columns}>
-    <Card className={styles.Card}>
-      <Link to={post.frontmatter.path}>
+    <Link to={post.frontmatter.path}>
+      <Card className={styles.Card}>
         <CardBody className={styles.CardBody}>
           <CardTitle style={{ margin: `0`, padding: `0` }}>
             <h2 className={styles.CardTitle}>{post.frontmatter.title}</h2>
@@ -30,13 +30,13 @@ const PostLink = ({ post }) => (
             <p>{post.frontmatter.date}</p>
           </CardText>
         </CardBody>
-      </Link>
-      <CardImg
-        className={styles.CardImg}
-        src={post.frontmatter.featuredImage}
-        alt="image"
-      />
-    </Card>
+        <CardImg
+          className={styles.CardImg}
+          src={post.frontmatter.featuredImage}
+          alt="image"
+        />
+      </Card>
+    </Link>
   </CardColumns>
 )
 

@@ -227,23 +227,23 @@ body.dark a p {
 
 body.dark a:hover,
 body.dark a:focus {
-  color: #596487;
+  color: #d5dff2;
   text-decoration: none;
 }
 
 body.dark a:hover .fa,
 body.dark a:focus .fa {
-  color: #596487;
+  color: #d5dff2;
 }
 
 body.dark a:hover h2,
 body.dark a:focus h2 {
-  color: #596487;
+  color: #d5dff2;
 }
 
 body.dark a:hover p,
 body.dark a:focus p {
-  color: #596487;
+  color: #d5dff2;
 }
 
 body.dark .activeLink {

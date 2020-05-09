@@ -217,17 +217,17 @@ body.dark {
   }
   a:hover,
   a:focus {
-    color: $clr-primary-brightened;
+    color: $clr-secondary;
     text-decoration: none;
     .fa {
       //fa when container link is hovered
-      color: $clr-primary-brightened;
+      color: $clr-secondary;
     }
     h2 {
-      color: $clr-primary-brightened;
+      color: $clr-secondary;
     }
     p {
-      color: $clr-primary-brightened;
+      color: $clr-secondary;
     }
   }
   .activeLink {

@@ -76,7 +76,7 @@
   max-width: -moz-fit-content;
   max-width: fit-content;
   color: white;
-  padding: 0.25vmax 0.5vmax;
+  padding: 0.125vmax 0.5vmax;
 }
 
 @media (max-width: 1023px) {
@@ -99,6 +99,11 @@
   .Columns .Card h2 {
     font-size: 1.4rem;
   }
+}
+
+.Columns .Card:hover,
+.Columns .Card:focus {
+  outline: 2px solid #727da2;
 }
 
 /*.Columns:nth-child(odd) {

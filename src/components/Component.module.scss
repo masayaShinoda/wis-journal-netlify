@@ -43,6 +43,7 @@ $padding-standard: 1.75vmax 2.5vmax;
       margin: 0;
       padding: 0;
     }
+
     .CardImg {
       width: 95%;
       margin: 0;
@@ -75,7 +76,7 @@ $padding-standard: 1.75vmax 2.5vmax;
         background: $clr-primary-brightened;
         max-width: fit-content;
         color: $clr-light;
-        padding: 0.25vmax 0.5vmax;
+        padding: 0.125vmax 0.5vmax;
       }
     }
     @media (max-width: $tablet-bp) {
@@ -94,6 +95,10 @@ $padding-standard: 1.75vmax 2.5vmax;
         max-width: 90%;
       }*/
     }
+  }
+  .Card:hover,
+  .Card:focus {
+    outline: 2px solid $clr-primary-brightened;
   }
 }
 /*.Columns:nth-child(odd) {

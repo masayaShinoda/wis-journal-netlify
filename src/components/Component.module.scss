@@ -20,7 +20,7 @@ $desktop-bp: 1024px;
 $tablet-bp: 1023px;
 $mobile-bp: 480px;
 //standard
-$padding-standard: 2.5vmax 3.75vmax;
+$padding-standard: 1.75vmax 2.5vmax;
 
 //columns component
 .Columns {
@@ -83,7 +83,7 @@ $padding-standard: 2.5vmax 3.75vmax;
   }
 }
 .Columns:nth-child(odd) {
-  border-right: 2px dashed transparentize($clr-primary-brightened, 0.5);
+  //border-right: 2px dashed transparentize($clr-primary-brightened, 0.5);
 }
 @media (max-width: $tablet-bp) {
   .Columns {

@@ -58,7 +58,7 @@ $padding-standard: 2.5vmax 3.75vmax;
     }
     p {
       // the date in blog.js
-      max-width: 65%;
+      max-width: fit-content;
       margin: inherit;
       padding: inherit;
       font-size: 0.8rem;

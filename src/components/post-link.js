@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 import {
   Card,
   Button,
@@ -15,29 +15,39 @@ import {
 import "../styles/styles.css"
 import styles from "./Component.module.css"
 
-const PostLink = ({ post }) => (
-  <CardColumns className={styles.Columns}>
-    <Card className={styles.Card}>
-      <CardBody className={styles.CardBody}>
-        <CardTitle>
-          <Link to={post.frontmatter.path}>
-            <h2>{post.frontmatter.title}</h2>
-          </Link>
-        </CardTitle>
-        <CardSubtitle>
-          <p>{post.frontmatter.tags}</p>
-        </CardSubtitle>
-        <CardText>
-          <p>{post.frontmatter.date}</p>
-        </CardText>
-      </CardBody>
-      <CardImg
-        className={styles.CardImg}
-        src="https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/wis-background-darkened.jpg"
-        alt="Card image cap"
-      />
-    </Card>
-  </CardColumns>
-)
-
+const PostLink = ({ post }) => {
+  const data = useStaticQuery(graphql`
+    query PostQuery {
+      markdownRemark {
+        frontmatter {
+          featuredImage
+        }
+      }
+    }
+  `)
+  return (
+    <CardColumns className={styles.Columns}>
+      <Card className={styles.Card}>
+        <CardBody className={styles.CardBody}>
+          <CardTitle>
+            <Link to={post.frontmatter.path}>
+              <h2>{post.frontmatter.title}</h2>
+            </Link>
+          </CardTitle>
+          <CardSubtitle>
+            <p>{post.frontmatter.tags}</p>
+          </CardSubtitle>
+          <CardText>
+            <p>{post.frontmatter.date}</p>
+          </CardText>
+        </CardBody>
+        <CardImg
+          className={styles.CardImg}
+          src={post.frontmatter.featuredImage}
+          alt="image"
+        />
+      </Card>
+    </CardColumns>
+  )
+}
 export default PostLink

@@ -89,7 +89,8 @@
 }
 
 .Columns .Card .CardSubtitle .CardAuthor {
-  background: #455174;
+  background: none;
+  color: currentColor;
 }
 
 .Columns .Card .CardText {

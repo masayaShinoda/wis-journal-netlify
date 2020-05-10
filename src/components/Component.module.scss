@@ -84,7 +84,8 @@ $padding-standard: 1.75vmax 2.5vmax;
         background: $clr-secondary;
       }
       .CardAuthor {
-        background: $clr-darker;
+        background: none;
+        color: currentColor;
       }
     }
     .CardText {

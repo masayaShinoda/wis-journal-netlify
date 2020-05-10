@@ -39,7 +39,7 @@ const Header = () => (
                 style={{ visibility: `hidden` }}
               />
               <i
-                className="fa fa-moon-o"
+                className="fa fa-lightbulb-o"
                 title="Lights on/off"
                 style={{ fontSize: `1.5em` }}
               ></i>

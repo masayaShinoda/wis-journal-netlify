@@ -43,12 +43,11 @@ $padding-standard: 1.75vmax 2.5vmax;
       margin: 0;
       padding: 0;
     }
-
     .CardImg {
       width: 95%;
       margin: 0;
       padding: 0;
-      margin-top: 2.5vmin;
+      margin-top: 1.25vmin;
     }
     .CardTitle {
       border-bottom: 2px solid $clr-primary-brightened;
@@ -60,7 +59,6 @@ $padding-standard: 1.75vmax 2.5vmax;
       margin-bottom: 0;
     }
     p {
-      // the date in blog.js
       max-width: fit-content;
       margin: inherit;
       padding: inherit;
@@ -88,6 +86,9 @@ $padding-standard: 1.75vmax 2.5vmax;
       .CardAuthor {
         background: $clr-darker;
       }
+    }
+    .CardText {
+      margin-top: 0.5vmin;
     }
     @media (max-width: $tablet-bp) {
       h2 {

@@ -29,7 +29,7 @@ const PostLink = ({ post }) => (
             </Link>
             <p className={styles.CardAuthor}>By: {post.frontmatter.author}</p>
           </CardSubtitle>
-          <CardText>
+          <CardText className={styles.CardText}>
             <p>{post.frontmatter.date}</p>
           </CardText>
         </CardBody>

@@ -43,7 +43,7 @@
   width: 95%;
   margin: 0;
   padding: 0;
-  margin-top: 2.5vmin;
+  margin-top: 1.25vmin;
 }
 
 .Columns .Card .CardTitle {
@@ -90,6 +90,10 @@
 
 .Columns .Card .CardSubtitle .CardAuthor {
   background: #939ebf;
+}
+
+.Columns .Card .CardText {
+  margin-top: 0.5vmin;
 }
 
 @media (max-width: 1023px) {

@@ -535,9 +535,7 @@ header div nav a i {
   font-size: 1.8rem;
   line-height: 1.4;
   border-bottom: 2px solid #596487;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 65%;
 }
 
 @media (max-width: 1023px) {
@@ -545,6 +543,7 @@ header div nav a i {
     font-size: 1.6rem;
     line-height: 1.4;
     border-bottom: 2px solid #596487;
+    max-width: 80%;
   }
 }
 
@@ -553,6 +552,7 @@ header div nav a i {
     font-size: 1.6rem;
     line-height: 1.4;
     border-bottom: 2px solid #596487;
+    max-width: 100%;
   }
 }
 

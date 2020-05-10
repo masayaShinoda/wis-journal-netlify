@@ -151,6 +151,12 @@
           align-items: center;
 }
 
+@media (max-width: 480px) {
+  .bgContainer {
+    min-height: 25vmax;
+  }
+}
+
 .frontpageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +167,7 @@
           flex-direction: column;
   width: 65%;
   margin-top: 2.5vmin;
-  padding: 2.5vmax 3.75vmax;
+  padding: 1.75vmax 2.5vmax;
 }
 
 .frontpageContainer h2 {
@@ -194,6 +200,7 @@
   }
   .frontpageContainer h2 {
     text-align: left;
+    font-size: 1.4rem;
   }
 }
 
@@ -203,6 +210,7 @@
   }
   .frontpageContainer h2 {
     text-align: left;
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=Component.module.css.map */

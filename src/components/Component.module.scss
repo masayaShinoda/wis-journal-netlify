@@ -138,12 +138,17 @@ $padding-standard: 1.75vmax 2.5vmax;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: $mobile-bp) {
+  .bgContainer {
+    min-height: 25vmax;
+  }
+}
 .frontpageContainer {
   display: flex;
   flex-direction: column;
   width: 65%;
   margin-top: 2.5vmin;
-  padding: 2.5vmax 3.75vmax;
+  padding: $padding-standard;
   h2 {
     text-align: center;
     animation-name: frontpageText;
@@ -163,6 +168,7 @@ $padding-standard: 1.75vmax 2.5vmax;
     width: 80%;
     h2 {
       text-align: left;
+      font-size: 1.4rem;
     }
   }
 }
@@ -171,6 +177,7 @@ $padding-standard: 1.75vmax 2.5vmax;
     width: 95%;
     h2 {
       text-align: left;
+      font-size: 1.1rem;
     }
   }
 }

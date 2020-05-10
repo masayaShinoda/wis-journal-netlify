@@ -465,13 +465,14 @@ header {
     font-size: 1.8rem;
     line-height: 1.4;
     border-bottom: 2px solid $clr-primary-brightened;
-    max-width: fit-content;
+    max-width: 65%;
   }
   @media (max-width: $tablet-bp) {
     .blogPostTitle {
       font-size: 1.6rem;
       line-height: 1.4;
       border-bottom: 2px solid $clr-primary-brightened;
+      max-width: 80%;
     }
   }
   @media (max-width: $mobile-bp) {
@@ -479,6 +480,7 @@ header {
       font-size: 1.6rem;
       line-height: 1.4;
       border-bottom: 2px solid $clr-primary-brightened;
+      max-width: 100%;
     }
   }
   .blogContent {

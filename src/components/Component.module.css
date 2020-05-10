@@ -86,6 +86,10 @@
 .Columns .Card .CardSubtitle .CardTags:hover {
   color: #3b4259;
   background: #d5dff2;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .Columns .Card .CardSubtitle .CardAuthor {

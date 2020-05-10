@@ -18,11 +18,11 @@ export default function Template({
         <div className="blogTemplate">
           <h1 className="blogPostTitle">{frontmatter.title}</h1>
           <div className="blogPostSubtitle">
-            <p>{frontmatter.date}</p>
             <div>
               <p>{frontmatter.tags}</p>
-              <p>{frontmatter.author}</p>
+              <p>By: {frontmatter.author}</p>
             </div>
+            <p>{frontmatter.date}</p>
           </div>
           <div
             className="blogContent"

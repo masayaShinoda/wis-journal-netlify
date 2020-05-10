@@ -41,7 +41,12 @@ const Header = () => (
               <i
                 className="fa fa-lightbulb-o"
                 title="Lights on/off"
-                style={{ fontSize: `1.5em` }}
+                style={{
+                  fontSize: `1.5em`,
+                  padding: `.25em`,
+                  borderRadius: `75%`,
+                  borderTop: `3px dashed yellow`,
+                }}
               ></i>
             </label>
           )}

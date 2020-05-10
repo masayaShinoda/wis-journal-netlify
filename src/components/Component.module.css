@@ -7,7 +7,7 @@
   display: flex;
   max-width: 33%;
   background: none;
-  border-bottom: 2px dashed rgba(114, 125, 162, 0.5);
+  border-bottom: 2px dashed rgba(100, 111, 150, 0.5);
 }
 
 .Columns .Card {
@@ -47,7 +47,7 @@
 }
 
 .Columns .Card .CardTitle {
-  border-bottom: 2px solid #727da2;
+  border-bottom: 2px solid #646f96;
   line-height: 1.4;
   max-width: 100%;
   font-family: "Karma", serif;
@@ -71,7 +71,7 @@
 
 .Columns .Card .CardSubtitle p {
   display: inline-block;
-  background: #727da2;
+  background: #646f96;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -89,7 +89,7 @@
 }
 
 .Columns .Card .CardSubtitle .CardAuthor {
-  background: #939ebf;
+  background: #455174;
 }
 
 .Columns .Card .CardText {
@@ -120,7 +120,7 @@
 
 .Columns .Card:hover,
 .Columns .Card:focus {
-  outline: 2px solid #727da2;
+  outline: 2px solid #646f96;
 }
 
 /*.Columns:nth-child(odd) {

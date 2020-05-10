@@ -9,11 +9,11 @@ $font-subheading: "Assistant", sans-serif;
 $font-primary: "Nunito Sans", sans-serif;
 //colors
 $clr-primary: #3b4259;
-$clr-primary-brightened: lighten($clr-primary, 25%);
+$clr-primary-brightened: lighten($clr-primary, 20%);
 $clr-primary-darkmode: lighten($clr-primary, 75%);
 $clr-secondary: #d5dff2;
 $clr-light: lighten($clr-secondary, 15%);
-$clr-darker: #939ebf;
+$clr-darker: darken(#939ebf, 30%);
 $clr-dark: #333333;
 //breakpoints
 $desktop-bp: 1024px;

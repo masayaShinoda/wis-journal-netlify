@@ -78,6 +78,16 @@ $padding-standard: 1.75vmax 2.5vmax;
         color: $clr-light;
         padding: 0.125vmax 0.5vmax;
       }
+      .CardTags {
+        text-decoration: underline;
+      }
+      .CardTags:hover {
+        color: $clr-primary;
+        background: $clr-secondary;
+      }
+      .CardAuthor {
+        background: $clr-darker;
+      }
     }
     @media (max-width: $tablet-bp) {
       h2 {

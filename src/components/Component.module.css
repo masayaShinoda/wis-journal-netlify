@@ -79,6 +79,19 @@
   padding: 0.125vmax 0.5vmax;
 }
 
+.Columns .Card .CardSubtitle .CardTags {
+  text-decoration: underline;
+}
+
+.Columns .Card .CardSubtitle .CardTags:hover {
+  color: #3b4259;
+  background: #d5dff2;
+}
+
+.Columns .Card .CardSubtitle .CardAuthor {
+  background: #939ebf;
+}
+
 @media (max-width: 1023px) {
   .Columns .Card {
     /*p {

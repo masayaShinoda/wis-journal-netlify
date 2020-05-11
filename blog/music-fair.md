@@ -4,6 +4,7 @@ date: 2020-02-23T05:08:21.010Z
 title: " Music Fair "
 author: Shida Masaya
 tags: Events
+category: Events
 featuredImage: https://masayashinoda.github.io/wis-news/images/band-fair-1.jpg
 ---
 <figure><img src="https://masayashinoda.github.io/wis-news/images/band-fair-1.jpg"></img></figure>

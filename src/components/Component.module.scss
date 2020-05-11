@@ -92,7 +92,8 @@ $padding-standard: 1.75vmax 2.5vmax;
       }
     }
     .CardText {
-      margin-top: 0.5vmin;
+      //contains date
+      margin-top: 0.125vmin;
     }
     @media (max-width: $tablet-bp) {
       h2 {

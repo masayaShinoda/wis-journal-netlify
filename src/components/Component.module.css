@@ -92,7 +92,7 @@
 }
 
 .Columns .Card .CardText {
-  margin-top: 0.5vmin;
+  margin-top: 0.125vmin;
 }
 
 @media (max-width: 1023px) {

@@ -4,6 +4,7 @@ date: 2020-03-20T14:59:48.048Z
 title: "How Are WIS students coping with this new Pandemic? "
 author: Monah Chheang
 tags: Fluff
+category: Articles
 featuredImage: https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/mona-corona-2.jpg
 ---
 <figure><img src="https://raw.githubusercontent.com/masayaShinoda/wis-news/master/images/mona-corona-1.jpg" alt="coronao"></figure>

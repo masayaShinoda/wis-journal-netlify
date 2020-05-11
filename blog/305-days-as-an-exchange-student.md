@@ -4,6 +4,7 @@ date: 2020-02-23T06:10:00.000Z
 title: " 305 Days as an Exchange Student "
 author: Pich Keo Pisei & Pisey Monoromnea
 tags: Articles
+category: Articles
 featuredImage: https://masayashinoda.github.io/wis-news/images/365-days-exchange-1.jpg
 ---
 ## Should you be given the amazing opportunity to study abroad, where would you choose to go?

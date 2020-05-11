@@ -76,16 +76,16 @@ $padding-standard: 1.75vmax 2.5vmax;
         color: $clr-light;
         padding: 0.125vmax 0.5vmax;
       }
-      .CardTags {
-        text-decoration: underline;
-      }
-      .CardTags:hover {
+      //.CardTags {
+      //text-decoration: underline;
+      //}
+      /*.CardTags:hover {
         color: $clr-primary;
         background: $clr-secondary;
         padding-left: 1.1em;
         padding-right: 1.1em;
         transition: 0.2s;
-      }
+      }*/
       .CardAuthor {
         background: none;
         color: currentColor;

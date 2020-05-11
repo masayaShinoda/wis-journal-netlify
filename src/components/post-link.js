@@ -24,9 +24,7 @@ const PostLink = ({ post }) => (
             <h2 className={styles.CardTitle}>{post.frontmatter.title}</h2>
           </CardTitle>
           <CardSubtitle className={styles.CardSubtitle}>
-            <Link to="/">
-              <p className={styles.CardTags}>{post.frontmatter.tags}</p>
-            </Link>
+            <p className={styles.CardTags}>{post.frontmatter.tags}</p>
             <p className={styles.CardAuthor}>By: {post.frontmatter.author}</p>
           </CardSubtitle>
           <CardText className={styles.CardText}>

@@ -36,6 +36,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    "gatsby-plugin-dark-mode",
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

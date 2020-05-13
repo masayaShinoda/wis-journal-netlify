@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 //components import
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 //styles import
 import "../styles/styles.css"
@@ -14,6 +15,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+      <SEO title={frontmatter.title} />
       <div className="postsContainer">
         <div className="blogTemplate">
           <h1 className="blogPostTitle">{frontmatter.title}</h1>

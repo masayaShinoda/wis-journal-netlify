@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 //components import
 import Frontpage from "../components/frontpage"
+import SEO from "../components/seo"
 
 //styles import
 import "../styles/styles.css"
@@ -23,6 +24,7 @@ const IndexPage = ({
 
   return (
     <Layout>
+      <SEO title={SEO.title} />
       <Frontpage />
       <div className="postsContainer" id="news">
         {Posts}

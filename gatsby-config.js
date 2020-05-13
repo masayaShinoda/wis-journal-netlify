@@ -13,6 +13,7 @@ module.exports = {
     author: `Masaya Shida`,
     copyright: `Masaya Shida`,
     siteUrl: `https://wis-journal.com`,
+    image: `https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/dark-font-header-logo.png`,
   },
   plugins: [
     {

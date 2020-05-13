@@ -115,12 +115,13 @@ body figure {
 
 body figure img {
   color: #646f96;
-  margin-bottom: 1.25vmax;
+  margin: 0;
 }
 
 body figure figcaption {
   font-size: 0.9em;
   color: #646f96;
+  margin-top: 0.8em;
 }
 
 @media (max-width: 1023px) {

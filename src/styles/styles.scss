@@ -114,12 +114,12 @@ body {
     img {
       //border-radius: 2.5vmin;
       color: $clr-primary-brightened;
-      margin-bottom: 1.25vmax;
+      margin: 0;
     }
     figcaption {
       font-size: 0.9em;
       color: $clr-primary-brightened;
-      //margin-top: -1em;
+      margin-top: 0.8em;
     }
   }
   @media (max-width: $tablet-bp) {

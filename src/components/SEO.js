@@ -42,6 +42,8 @@ const SEO = ({ title, description, image, article }) => {
   )
 }
 
+export default SEO
+
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
@@ -55,7 +57,6 @@ SEO.defaultProps = {
   image: null,
   article: false,
 }
-export default SEO
 
 const query = graphql`
   query SEO {

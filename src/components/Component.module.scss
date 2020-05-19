@@ -178,6 +178,28 @@ $padding-standard: 1.75vmax 2.5vmax;
       opacity: 0;
     }
   }
+  .netlifyIdentity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $clr-light;
+    background: $clr-primary;
+    max-width: fit-content;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2.5vmin;
+      i {
+        color: $clr-light;
+      }
+      p {
+        padding: 0.25em 0.5em;
+        margin: 0;
+        color: $clr-light;
+      }
+    }
+  }
 }
 @media (max-width: $tablet-bp) {
   .frontpageContainer {

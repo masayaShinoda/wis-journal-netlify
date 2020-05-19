@@ -14,11 +14,15 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@reach/dialog": "^0.10.2",
+    "@reach/tabs": "^0.10.2",
+    "@reach/visually-hidden": "^0.10.2",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.21.0",
     "gatsby-plugin-dark-mode": "^1.1.1",
     "gatsby-plugin-manifest": "^2.4.2",
     "gatsby-plugin-netlify-cms": "^4.3.0",
+    "gatsby-plugin-netlify-identity": "0.0.3",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sitemap": "^2.4.2",
     "gatsby-source-filesystem": "^2.3.0",
@@ -27,6 +31,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
+    "react-netlify-identity-widget": "^0.2.7",
     "reactstrap": "^8.4.1"
   },
   "devDependencies": {

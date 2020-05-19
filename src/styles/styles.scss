@@ -156,7 +156,7 @@ body {
     }
   }
   footer {
-    color: $clr-dark;
+    border: 1px solid red; //debug
   }
 }
 body.light {
@@ -182,7 +182,6 @@ body.dark {
     font-family: $font-heading;
   }
   h2 {
-    font-size: 1.6em;
     //font-weight: 500;
     line-height: 1.4;
     font-family: $font-subheading;
@@ -289,9 +288,6 @@ body.dark {
       max-width: 100%;
     }
   }
-  footer {
-    color: $clr-dark;
-  }
   .headerLogoLight {
     //hide light logo when darkmode
     display: none;
@@ -339,6 +335,7 @@ header {
       }
     }
     nav {
+      display: flex;
       margin-top: 1.5vh;
       padding-bottom: 1.5vh;
       border-bottom: 2px solid $clr-primary-brightened;

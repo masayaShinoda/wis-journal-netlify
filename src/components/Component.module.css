@@ -210,6 +210,46 @@
   }
 }
 
+.frontpageContainer .netlifyIdentity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: #3b4259;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.frontpageContainer .netlifyIdentity button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2.5vmin;
+}
+
+.frontpageContainer .netlifyIdentity button i {
+  color: white;
+}
+
+.frontpageContainer .netlifyIdentity button p {
+  padding: 0.25em 0.5em;
+  margin: 0;
+  color: white;
+}
+
 @media (max-width: 1023px) {
   .frontpageContainer {
     width: 80%;

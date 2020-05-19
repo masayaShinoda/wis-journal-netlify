@@ -40,5 +40,12 @@ module.exports = {
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    // You can should only have one instance of this plugin
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://wis-journal-netlify.netlify.app/`, // required!
+      },
+    },
   ],
 }

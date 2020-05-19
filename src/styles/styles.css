@@ -163,7 +163,7 @@ body blockquote p {
 }
 
 body footer {
-  color: #333333;
+  border: 1px solid red;
 }
 
 body.light .headerLogoDark {
@@ -190,7 +190,6 @@ body.dark h1 {
 }
 
 body.dark h2 {
-  font-size: 1.6em;
   line-height: 1.4;
   font-family: "Assistant", sans-serif;
 }
@@ -314,10 +313,6 @@ body.dark blockquote p {
   }
 }
 
-body.dark footer {
-  color: #333333;
-}
-
 body.dark .headerLogoLight {
   display: none;
 }
@@ -376,6 +371,9 @@ header div .headerLogoDark {
 }
 
 header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 1.5vh;
   padding-bottom: 1.5vh;
   border-bottom: 2px solid #646f96;

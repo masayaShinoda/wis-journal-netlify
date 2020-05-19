@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
+import NetlifyIdentity from "./netlify-cms-identity"
+
 //styles import
 import styles from "./Component.module.css"
 
@@ -23,6 +25,7 @@ const Frontpage = () => {
     <div className={styles.bgContainer}>
       <div className={styles.frontpageContainer}>
         <h2>{data.site.siteMetadata.description}</h2>
+        <NetlifyIdentity></NetlifyIdentity>
       </div>
     </div>
   )

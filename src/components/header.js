@@ -13,6 +13,7 @@ import "../assets/css/font-awesome.min.css"
 //images import
 import headerLogoLight from "../images/dark-font-header-logo.svg"
 import headerLogoDark from "../images/light-font-header-logo.svg"
+import NetlifyIdentity from "./netlify-cms-identity"
 
 const Header = () => (
   <header>
@@ -50,7 +51,6 @@ const Header = () => (
           )}
         </ThemeToggler>
       </section>
-
       <nav>
         <Link to="/">
           {" "}

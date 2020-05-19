@@ -49,7 +49,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
-        url: `https://wis-journal.com/`, // required!
+        url: `https://wis-journal-netlify.netlify.app/`, // required!
       },
     },
   ],

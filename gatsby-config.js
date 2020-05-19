@@ -28,7 +28,12 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

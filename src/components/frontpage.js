@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import NetlifyIdentity from "./netlify-cms-identity"
+import NetlifyIdentity from "./netlify-identity"
 
 //styles import
 import styles from "./Component.module.css"

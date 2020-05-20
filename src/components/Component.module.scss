@@ -185,7 +185,7 @@ $padding-standard: 1.75vmax 2.5vmax;
     color: $clr-light;
     background: $clr-primary;
     max-width: fit-content;
-    button {
+    a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -198,6 +198,9 @@ $padding-standard: 1.75vmax 2.5vmax;
         margin: 0;
         color: $clr-light;
       }
+    }
+    a:hover {
+      background: $clr-darker;
     }
   }
 }

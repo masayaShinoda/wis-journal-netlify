@@ -11,5 +11,4 @@ featuredImage: https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixli
 ## Step 1: Sign up
 1. Add "/admin" to the URL address bar.
 2. The address bar will look like this: https://www.wis-journal.com/admin
-3. Press enter/go to the new address.
-
+3. Press enter.

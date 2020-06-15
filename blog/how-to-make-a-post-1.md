@@ -8,7 +8,7 @@ featuredImage: https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixli
 ---
 *Got news to publish or some thoughts you want to share on this  site? Follow along.*
 
-# Step 1: Sign up
+## Step 1: Sign up
 * Add "/admin" to the URL address bar.
 * The address bar will look like this: https://www.wis-journal.com/admin
 * Press enter/go to the new address.

@@ -11,6 +11,7 @@ _Got news to publish or some thoughts you want to share on this site? Follow alo
 
 ## Step 1: Sign up
 
-- Add "/admin" to the URL address bar.
+- Add "/admin" to the URL address bar or just click the login button on the front page
+![screenshot](https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/login-btn-scrshot.png)
 - The address bar will look like this: https://www.wis-journal.com/admin
-- Press enter.
+- Press enter

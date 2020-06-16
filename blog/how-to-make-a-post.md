@@ -1,6 +1,6 @@
 ---
 path: /how-to-make-a-post
-date: 15/6/2020
+date: 2020-06-15T06:10:00.000Z
 title: How to make a post on this site
 author: Shida Masaya
 category: Articles

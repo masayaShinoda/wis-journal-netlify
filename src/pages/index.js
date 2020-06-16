@@ -43,7 +43,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date
+            date(formatString: "DD/MM/YYYY")
             path
             title
             featuredImage

@@ -550,7 +550,10 @@ header {
       margin-bottom: 0.5em;
     }
     ul {
-      list-style-type: square;
+      li {
+        list-style-type: square;
+        margin: 0.5em;
+      }
     }
     h1,
     h2,

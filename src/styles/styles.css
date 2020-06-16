@@ -659,8 +659,9 @@ header div nav a i {
   margin-bottom: 0.5em;
 }
 
-.blogTemplate .blogContent ul {
+.blogTemplate .blogContent ul li {
   list-style-type: square;
+  margin: 0.5em;
 }
 
 .blogTemplate .blogContent h1,

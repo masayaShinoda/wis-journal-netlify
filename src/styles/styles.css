@@ -659,6 +659,13 @@ header div nav a i {
   margin-bottom: 0.5em;
 }
 
+.blogTemplate .blogContent ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .blogTemplate .blogContent ul li {
   list-style-type: square;
   margin: 0.5em;

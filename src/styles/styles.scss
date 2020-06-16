@@ -550,6 +550,7 @@ header {
       margin-bottom: 0.5em;
     }
     ul {
+      flex-direction: column;
       li {
         list-style-type: square;
         margin: 0.5em;

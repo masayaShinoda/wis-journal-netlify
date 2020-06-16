@@ -14,10 +14,12 @@ _Got news to publish or some thoughts you want to share on this site? Follow alo
 * Add "/admin" to the URL address bar then press enter, or just click the login button on the front page
 
 ![screenshot](https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/login-btn-scrshot.png)
+
 * The address bar should will like this: https://www.wis-journal.com/admin
 * Click "Login with Netlify Identity"
 
 ![screenshot](https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/netlify-identity-button.png)
+
 * Either sign up with your own email and password (an email will be sent to your inbox with a confirmation link), or with your Google account by clicking "Continue with Google"
 
 ![screenshot](https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/netlify-login-widget.png)

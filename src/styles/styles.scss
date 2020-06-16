@@ -200,7 +200,8 @@ body.dark {
     max-width: fit-content;
   }
   p,
-  ul {
+  ul,
+  ol {
     color: $clr-light;
     font-family: $font-primary;
     //font-weight: 400;

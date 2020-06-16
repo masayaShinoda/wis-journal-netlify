@@ -209,7 +209,8 @@ body.dark h3 {
 }
 
 body.dark p,
-body.dark ul {
+body.dark ul,
+body.dark ol {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;

@@ -397,10 +397,10 @@ header {
       display: flex;
       flex-direction: column-reverse;
       //flex-direction: column;
-      list-style-type: none;
       margin: 0;
       padding: 0;
       li {
+        list-style-type: none;
         margin: inherit;
         padding: inherit;
         margin-bottom: 3.75vh;

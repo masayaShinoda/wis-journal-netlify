@@ -8,4 +8,4 @@ featuredImage: https://64.media.tumblr.com/06ea570b99b4e449c5aebeec2c5b6e75/tumb
 ---
 i love wis
 
-<img src="https://i.dailymail.co.uk/i/pix/2017/06/15/21/4173917500000578-4608744-image-a-34_1497557562750.jpg"></img>
+![screenshot](https://i.dailymail.co.uk/i/pix/2017/06/15/21/4173917500000578-4608744-image-a-34_1497557562750.jpg)

@@ -1,6 +1,6 @@
 ---
 path: /article/test-post-oct-6
-date: 2020-10-06T15:15:33.578Z
+date: 2020-10-06T15:17:55.411Z
 title: test post oct 6
 author: Masaya
 category: stuff
@@ -9,3 +9,4 @@ featuredImage: https://images.unsplash.com/photo-1601914858098-e228134b7eb1?ixli
 asdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd
 
 asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+asd

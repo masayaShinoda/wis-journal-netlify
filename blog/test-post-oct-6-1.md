@@ -1,5 +1,5 @@
 ---
-path: test-post-oct-6
+path: /article/test-post-oct-6
 date: 2020-10-06T15:15:33.578Z
 title: test post oct 6
 author: Masaya

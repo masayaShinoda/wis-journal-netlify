@@ -17,23 +17,23 @@ import styles from "./Component.module.css"
 
 const PostLink = ({ post }) => (
   <CardColumns className={styles.Columns}>
-    <Link to={post.frontmatter.path}>
+    <Link to={post.id}>
       <Card className={styles.Card}>
         <CardBody className={styles.CardBody}>
           <CardTitle style={{ margin: `0`, padding: `0` }}>
-            <h2 className={styles.CardTitle}>{post.frontmatter.title}</h2>
+            <h2 className={styles.CardTitle}>{post.title}</h2>
           </CardTitle>
           <CardSubtitle className={styles.CardSubtitle}>
-            <p className={styles.CardTags}>{post.frontmatter.category}</p>
-            <p className={styles.CardAuthor}>By: {post.frontmatter.author}</p>
+            <p className={styles.CardTags}>{post.category}</p>
+            <p className={styles.CardAuthor}>By: {post.author}</p>
           </CardSubtitle>
           <CardText className={styles.CardText}>
-            <p>{post.frontmatter.date}</p>
+            <p>{post.date}</p>
           </CardText>
         </CardBody>
         <CardImg
           className={styles.CardImg}
-          src={post.frontmatter.featuredImage}
+          src={post.featuredimage.url}
           alt="image"
         />
       </Card>

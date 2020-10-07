@@ -37,16 +37,43 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
+  query MyQuery {
+    allDatoCmsArticle {
+      nodes {
         title
+        locale
         author
-        tags
+        category
+        id
         date(formatString: "DD/MM/YYYY")
+        featuredimage {
+          url
+        }
+        content
       }
     }
   }
 `
+
+// allMarkdownRemark {
+//   edges {
+//     node {
+//       internal {
+//         content
+//       }
+//     }
+//   }
+// }
+
+// query($path: String!) {
+//   markdownRemark(frontmatter: { path: { eq: $path } }) {
+//     html
+//     frontmatter {
+//       path
+//       title
+//       author
+//       tags
+//       date(formatString: "DD/MM/YYYY")
+//     }
+//   }
+// }

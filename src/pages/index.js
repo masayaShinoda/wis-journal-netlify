@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import PostLink from "../components/post-link"
 
 //bootstrap import
@@ -13,13 +13,30 @@ import SEO from "../components/seo"
 //styles import
 import "../styles/styles.css"
 
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allDatoCmsArticle {
+        edges {
+          node {
+            id
+            title
+            date(formatString: "DD/MM/YYYY")
+            author
+            category
+            content
+            locale
+            featuredimage {
+              url
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const Posts = data.allDatoCmsArticle.edges
+    .filter(edge => !!edge.node.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return (
@@ -35,23 +52,23 @@ const IndexPage = ({
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "DD/MM/YYYY")
-            path
-            title
-            featuredImage
-            category
-            author
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery =
+
+// query {
+//   allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+//     edges {
+//       node {
+//         id
+//         excerpt(pruneLength: 250)
+//         frontmatter {
+//           date(formatString: "DD/MM/YYYY")
+//           path
+//           title
+//           featuredImage
+//           category
+//           author
+//         }
+//       }
+//     }
+//   }
+// }

@@ -13,7 +13,7 @@ module.exports = {
     author: `Masaya Shida`,
     copyright: `Masaya Shida`,
     siteUrl: `https://wis-journal.com`,
-    image: `https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/dark-font-header-logo.png`,
+    image: `https://www.datocms-assets.com/35631/1602074969-dark-font-header-logo.png`,
   },
   plugins: [
     {
@@ -29,16 +29,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: true,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `93dccde4f9ad32582ec70c34f48a11`,
+        preview: false,
+        disableLiveReload: false,
       },
     },
     `gatsby-transformer-remark`,
@@ -46,11 +48,5 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     // You can should only have one instance of this plugin
-    {
-      resolve: `gatsby-plugin-netlify-identity`,
-      options: {
-        url: `https://wis-journal.com/`, // required!
-      },
-    },
   ],
 }

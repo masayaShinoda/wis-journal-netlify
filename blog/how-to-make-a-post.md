@@ -23,3 +23,5 @@ _Got news to publish or some thoughts you want to share on this site? Follow alo
 * Either sign up with your own email and password (an email will be sent to your inbox with a confirmation link), or with your Google account by clicking "Continue with Google"
 
 ![screenshot](https://raw.githubusercontent.com/masayaShinoda/wis-journal-netlify/master/src/images/netlify-login-widget.png)
+
+## Write an article!

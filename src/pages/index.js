@@ -37,7 +37,11 @@ const IndexPage = () => {
 
   const Posts = data.allDatoCmsArticle.edges
     .filter(edge => !!edge.node.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => {
+      if (edge.node.title) {
+        return <PostLink key={edge.node.id} post={edge.node} />
+      }
+    })
 
   return (
     <Layout>

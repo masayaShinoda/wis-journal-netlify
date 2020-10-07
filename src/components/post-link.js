@@ -33,7 +33,10 @@ const PostLink = ({ post }) => (
         </CardBody>
         <CardImg
           className={styles.CardImg}
-          src={post.featuredimage.url}
+          src={
+            post.featuredimage.url +
+            "?auto=format&ar=1200%3A800&fit=max&ixlib=react-9.0.1&w=282"
+          }
           alt="image"
         />
       </Card>

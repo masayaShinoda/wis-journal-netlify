@@ -8,72 +8,35 @@ import SEO from "../components/seo"
 //styles import
 import "../styles/styles.css"
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+export default function Product({ pageContext }) {
+  const { data } = pageContext
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO title={data.title} />
       <div className="postsContainer">
         <div className="blogTemplate">
-          <h1 className="blogPostTitle">{frontmatter.title}</h1>
+          <h1 className="blogPostTitle">{data.title}</h1>
           <div className="blogPostSubtitle">
             <div>
-              <p>{frontmatter.tags}</p>
-              <p>By: {frontmatter.author}</p>
+              <p>{data.tags}</p>
+              <p>By: {data.author}</p>
             </div>
-            <p>{frontmatter.date}</p>
+            <p>{data.date}</p>
           </div>
-          <div
+          {/* <div
             className="blogContent"
             dangerouslySetInnerHTML={{ __html: html }}
-          />
+          /> */}
+          <div
+            className="blogContent"
+            dangerouslySetInnerHTML={{
+              __html: data.contentNode.childMarkdownRemark.html,
+            }}
+          >
+            {/* {data.contentNode.childMarkdownRemark.html} */}
+          </div>
         </div>
       </div>
     </Layout>
   )
 }
-
-export const pageQuery = graphql`
-  query MyQuery {
-    allDatoCmsArticle {
-      nodes {
-        title
-        locale
-        author
-        category
-        id
-        date(formatString: "DD/MM/YYYY")
-        featuredimage {
-          url
-        }
-        content
-      }
-    }
-  }
-`
-
-// allMarkdownRemark {
-//   edges {
-//     node {
-//       internal {
-//         content
-//       }
-//     }
-//   }
-// }
-
-// query($path: String!) {
-//   markdownRemark(frontmatter: { path: { eq: $path } }) {
-//     html
-//     frontmatter {
-//       path
-//       title
-//       author
-//       tags
-//       date(formatString: "DD/MM/YYYY")
-//     }
-//   }
-// }

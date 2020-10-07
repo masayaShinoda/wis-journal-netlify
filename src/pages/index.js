@@ -55,24 +55,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-// export const pageQuery =
-
-// query {
-//   allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-//     edges {
-//       node {
-//         id
-//         excerpt(pruneLength: 250)
-//         frontmatter {
-//           date(formatString: "DD/MM/YYYY")
-//           path
-//           title
-//           featuredImage
-//           category
-//           author
-//         }
-//       }
-//     }
-//   }
-// }
